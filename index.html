@@ -151,6 +151,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager</li>
@@ -162,6 +164,8 @@ Error message and password prompt
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/tag-manager</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/unfold-all</li>
 
 <li>$:/config/RelinkOnRename</li>
 
@@ -185,15 +189,25 @@ Error message and password prompt
 
 <li>$:/GitHub/Username</li>
 
+<li>$:/Import</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/folded/$:/ControlPanel</li>
+
+<li>$:/state/folded/$:/core</li>
+
 <li>$:/state/image-picker/system--1365487189</li>
 
 <li>$:/state/image-picker/system-1570961152</li>
+
+<li>$:/state/plugin-info-334910430-$:/core</li>
+
+<li>$:/state/plugin-info-334910430-$:/core---1812962263</li>
 
 <li>$:/state/showeditpreview</li>
 
@@ -229,7 +243,13 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/options/sidebarlayout</li>
 
+<li>$:/themes/tiddlywiki/vanilla/options/stickytitles</li>
+
+<li>$:/view</li>
+
 <li>2D Animation</li>
+
+<li>3Blue1Brown</li>
 
 <li>3D</li>
 
@@ -246,6 +266,8 @@ Error message and password prompt
 <li>Comedy Shorts</li>
 
 <li>Cooking</li>
+
+<li>Crafting</li>
 
 <li>CrashCourse</li>
 
@@ -277,6 +299,8 @@ Error message and password prompt
 
 <li>Horror</li>
 
+<li>James Lee</li>
+
 <li>Kanban</li>
 
 <li>Leadhead</li>
@@ -285,9 +309,13 @@ Error message and password prompt
 
 <li>LTg</li>
 
+<li>Mathematics</li>
+
 <li>Nick Robinson</li>
 
 <li>Night Mind</li>
+
+<li>Physics</li>
 
 <li>polygon</li>
 
@@ -306,6 +334,8 @@ Error message and password prompt
 <li>SFX</li>
 
 <li>Short Film</li>
+
+<li>Stanford</li>
 
 <li>style</li>
 
@@ -328,6 +358,10 @@ Error message and password prompt
 <li>Template channel</li>
 
 <li>Test</li>
+
+<li>The Thought Emporium</li>
+
+<li>Tips &amp; tricks TW5</li>
 
 <li>todo</li>
 
@@ -372,6 +406,9 @@ Error message and password prompt
 <div created="20201112221528404" modified="20201112221528404" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all">
 <pre>show</pre>
 </div>
+<div created="20201129043625217" modified="20201129043632786" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all">
+<pre>hide</pre>
+</div>
 <div created="20201112221527786" modified="20201112221527786" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>show</pre>
 </div>
@@ -390,14 +427,17 @@ Error message and password prompt
 <div created="20201112221611493" modified="20201112221611493" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/tag-manager">
 <pre>show</pre>
 </div>
+<div created="20201129043631627" modified="20201129043632135" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/unfold-all">
+<pre>hide</pre>
+</div>
 <div created="20201113000252216" modified="20201113000252216" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
 <div created="20201116153443199" modified="20201116153443199" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/clone">
 <pre>show</pre>
 </div>
-<div created="20201116153505709" modified="20201116153505709" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions">
-<pre>hide</pre>
+<div created="20201116153505709" modified="20201129043642518" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions">
+<pre>show</pre>
 </div>
 <div created="20201116153449418" modified="20201116153449418" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/permalink">
 <pre>show</pre>
@@ -9791,8 +9831,19 @@ Error message and password prompt
 <div created="20201112221014456" modified="20201112221022215" title="$:/GitHub/Repo">
 <pre>CuratedVideos/curatedvideos.github.io</pre>
 </div>
-<div created="20201112220827768" modified="20201128231012052" title="$:/GitHub/Username">
+<div created="20201112220827768" modified="20201129044251459" title="$:/GitHub/Username">
 <pre>CuratedVideos</pre>
+</div>
+<div plugin-type="import" status="pending" title="$:/Import" type="application/json">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;Untitled&quot;: {
+            &quot;title&quot;: &quot;Untitled&quot;,
+            &quot;text&quot;: &quot;tc-image-save-button&quot;,
+            &quot;type&quot;: &quot;text/plain&quot;
+        }
+    }
+}</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -9803,44 +9854,56 @@ Error message and password prompt
 <div created="20201112214720665" modified="20201112215037144" title="$:/SiteTitle">
 <pre>Curated Videos</pre>
 </div>
+<div created="20201129043650911" modified="20201129043716021" title="$:/state/folded/$:/ControlPanel">
+<pre>show</pre>
+</div>
+<div created="20201129043655546" modified="20201129043655546" title="$:/state/folded/$:/core">
+<pre>hide</pre>
+</div>
 <div created="20201112225647849" modified="20201112225947919" title="$:/state/image-picker/system--1365487189">
 <pre>show</pre>
 </div>
 <div created="20201112225210553" modified="20201112225210553" title="$:/state/image-picker/system-1570961152">
 <pre>show</pre>
 </div>
-<div created="20201112222943758" modified="20201112223925483" title="$:/state/showeditpreview">
+<div created="20201129043701959" modified="20201129043709609" title="$:/state/plugin-info-334910430-$:/core">
 <pre>no</pre>
+</div>
+<div created="20201129042617491" modified="20201129042617491" title="$:/state/plugin-info-334910430-$:/core---1812962263">
+<pre>contents</pre>
+</div>
+<div created="20201112222943758" modified="20201129040143333" title="$:/state/showeditpreview">
+<pre>yes</pre>
 </div>
 <div created="20201112222945343" modified="20201128221836667" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20201112221816066" modified="20201112221826079" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/Filter</pre>
+<div created="20201112221816066" modified="20201129044214129" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
-<div created="20201112221519821" modified="20201116153440722" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Toolbars</pre>
+<div created="20201112221519821" modified="20201129044235077" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/StoryView</pre>
 </div>
-<div created="20201112220759026" modified="20201128223725983" title="$:/state/tab-1749438307">
+<div created="20201112220759026" modified="20201129044241174" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
 <div created="20201112220804010" modified="20201128215608893" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20201112224011282" modified="20201128222013002" title="$:/state/tab/sidebar--595412856">
+<div created="20201112224011282" modified="20201129044259602" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div created="20201112221524523" modified="20201116160508800" title="$:/state/tabs/controlpanel/toolbars-1345989671">
-<pre>$:/core/ui/ControlPanel/Toolbars/EditorToolbar</pre>
+<div created="20201112221524523" modified="20201129043751650" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201128231004744" list="Home style" modified="20201128231004744" title="$:/StoryList">
+<div list="Home style" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20201112221816066" modified="20201116160533217" title="$:/temp/advancedsearch">
-<pre>[[Style iframe from youtube]]</pre>
+<div created="20201112221816066" modified="20201129043553591" title="$:/temp/advancedsearch">
+<pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -9900,10 +9963,10 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20201112221741585" modified="20201128225814210" title="$:/temp/NewTagName">
+<div created="20201112221741585" modified="20201129040743609" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
-<div created="20201128221928334" modified="20201128230656989" title="$:/temp/search">
+<div created="20201128221928334" modified="20201129042827195" title="$:/temp/search">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
@@ -10018,8 +10081,25 @@ Error message and password prompt
 <div created="20201113010920022" modified="20201113010920022" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fluid-fixed</pre>
 </div>
+<div created="20201129043812757" modified="20201129043816268" title="$:/themes/tiddlywiki/vanilla/options/stickytitles">
+<pre>no</pre>
+</div>
+<div created="20201129043801427" modified="20201129043801427" title="$:/view">
+<pre>classic</pre>
+</div>
 <div created="20201128223052410" modified="20201128223134304" tags="style" title="2D Animation">
 <pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+</div>
+<div created="20201129004737561" modified="20201129004909102" tags="channel Education Mathematics" title="3Blue1Brown">
+<pre>''channel'' : https://www.youtube.com/c/3blue1brown
+
+&lt;&lt;&lt;
+3Blue1Brown, by Grant Sanderson, is some combination of math and entertainment, depending on your disposition. The goal is for explanations to be driven by animations and for difficult problems to be made simple with changes in perspective.
+&lt;&lt;&lt;
+
+;Last videos uploaded :
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/videoseries?list=UUYO_jab_esuFRV4b17AJtAw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 </div>
 <div created="20201112233225337" modified="20201112233248496" tags="style" title="3D">
 <pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
@@ -10072,6 +10152,9 @@ Captain Disillusion guides children of all ages through the maze of visual faker
 <pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
 </div>
 <div created="20201128222015052" modified="20201128222021734" tags="style" title="Cooking">
+<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+</div>
+<div created="20201129032650451" modified="20201129032659676" tags="style" title="Crafting">
 <pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
 </div>
 <div created="20201128221718468" modified="20201128221851129" tags="channel Education" title="CrashCourse">
@@ -10146,19 +10229,41 @@ Welcome to Good Mythical Morning with Rhett &amp; Link! Tune in every Monday-Fri
 <div created="20201128220631754" modified="20201128220643788" tags="style" title="History">
 <pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
 </div>
-<div created="20201112222311414" modified="20201112224731202" title="Home">
+<div created="20201112222311414" modified="20201129044125148" title="Home">
 <pre>^^{{data}}^^
 
-Welcome on [[curatedvideos.github.io|https://curatedvideos.github.io/]]!
+Welcome on [[curatedvideos.github.io|https://curatedvideos.github.io/]]! Here you will find interesting, hand-picked video programs to explore beyond the algorithm.
 
+&lt;p class=&quot;separationaccueil&quot;&gt;How to use this wiki&lt;/p&gt;
+This wiki is powered by &lt;a href=&quot;https://tiddlywiki.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;~TiddlyWiki {{$:/core/icon}}&lt;/a&gt;. You can download it by clicking the {{$:/core/ui/Buttons/save-wiki}} button. To perform an advanced search, click [[here|$:/AdvancedSearch]].
 
+&lt;p class=&quot;separationaccueil&quot;&gt;Templates&lt;/p&gt;
+
+* [[channel|Template channel]]
+* video
+* specialty channel
+
+&lt;!-- 
 &lt;p class=&quot;separationaccueil&quot;&gt;Kanban&lt;/p&gt;
 {{Kanban}}
+
+--&gt;
 
 &lt;a href=&quot;mailto:curatedvideos.contact@gmail.com&quot; class=&quot;contact&quot;&gt;&lt;span class=&quot;wave&quot;&gt;&amp;#128075;&lt;/span&gt;curatedvideos.contact@gmail.com&lt;/a&gt;  </pre>
 </div>
 <div created="20201114213003565" modified="20201114213010929" tags="style" title="Horror">
 <pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+</div>
+<div created="20201129033820615" modified="20201129034029958" tags="channel [[2D Animation]] Weird [[Comedy Shorts]]" title="James Lee">
+<pre>''channel'' : https://www.youtube.com/channel/UC3XI0MtMTgqauxFS3Umi5Eg
+
+&lt;&lt;&lt;
+ Animation Director/Producer 
+&lt;&lt;&lt;
+
+;Last videos uploaded :
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/videoseries?list=PLnEdP5ipgnPA58p3TtOSLLaN65R0LartJ&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 </div>
 <div created="20201112223028343" modified="20201112224024469" title="Kanban">
 <pre>&lt;div class=&quot;container&quot;&gt;
@@ -10202,6 +10307,9 @@ Hopefully it doesn't suck
 <div created="20201112223858912" modified="20201112223927599" tags="TW5" title="LTg">
 <pre>&lt;&lt;list-links &quot;[all[current]tagging[]sort[title]]&quot;&gt;&gt;</pre>
 </div>
+<div created="20201129004918177" modified="20201129004925649" tags="style" title="Mathematics">
+<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+</div>
 <div created="20201112234649030" modified="20201113000253544" tags="channel Documentaries" title="Nick Robinson">
 <pre>''channel'' : https://www.youtube.com/user/babylonian/
 
@@ -10222,6 +10330,9 @@ The internet's source for all the dark, mysterious, horrifying, and strange thin
 ;Last videos uploaded :
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/videoseries?list=UU58IKuPHnZkdCZ6T5mSRGCg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
+</div>
+<div created="20201129033045537" modified="20201129033053059" tags="style" title="Physics">
+<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
 </div>
 <div created="20201113005350876" modified="20201113005410541" tags="wip channel" title="polygon">
 <pre>https://www.youtube.com/c/polygon/videos</pre>
@@ -10282,6 +10393,17 @@ Stay curious!
 </div>
 <div created="20201128222756247" modified="20201128222807481" tags="style" title="Short Film">
 <pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+</div>
+<div created="20201128235208581" modified="20201129000031930" tags="channel Education" title="Stanford">
+<pre>''channel'' : https://www.youtube.com/channel/UC-EnprmCZ3OXyAoG7vjVNCA
+
+&lt;&lt;&lt;
+The Stanford Channel on ~YouTube features videos from schools, departments and programs across the university.   Highlights include courses, faculty lectures, campus events and the latest research news from Stanford.
+&lt;&lt;&lt;
+
+;Last videos uploaded :
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/videoseries?list=UU-EnprmCZ3OXyAoG7vjVNCA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 </div>
 <div created="20201112232530977" modified="20201112232540367" tags="tags" title="style">
 <pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
@@ -10447,6 +10569,29 @@ Most of Technology Connections' videos usually consist of the host Alec discussi
 </div>
 <div created="20201112220715055" modified="20201112220719202" tags="" title="Test">
 <pre></pre>
+</div>
+<div created="20201129032725080" modified="20201129033019243" tags="channel Biology Crafting Physics" title="The Thought Emporium">
+<pre>''channel'' : https://www.youtube.com/c/thethoughtemporium
+
+&lt;&lt;&lt;
+When we think of science and scientists, we tend to think of people in perfect white lab coats, working in a shiny and expensive lab. Well I'm here to break that image. From biohacking and biology, to nuclear physics and nanotech, any topic is fair game. I don't just talk about concept and theory, I do the real science. Under controlled conditions, I'll use high voltage, corrosive solutions, extreme temperatures and more to create some very exciting machines and materials. Best of all, I'll show all of it can be done at home using as many off the shelf and DIY parts as possible.
+&lt;&lt;&lt;
+
+;Last videos uploaded :
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/videoseries?list=PLZLsjPxmF1BF5X4GnAcG1TL_PJi8iXggp&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
+</div>
+<div created="20201129040609987" modified="20201129042430336" tags="TW5" title="Tips &amp; tricks TW5">
+<pre>&lt;&lt;&lt;.tc-big-quote
+Here's a big quote
+&lt;&lt;&lt; https://tiddlywiki.com/#Block%20Quotes%20in%20WikiText
+
+&lt;a href=&quot;https://www.youtube.com/c/JeremyRuston&quot; class=&quot;tc-btn-big-green&quot; style=&quot;border-radius:4px;background-color:#e52d27;&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+{{$:/core/images/video}} Channel
+&lt;/a&gt;
+
+
+</pre>
 </div>
 <div created="20201112223824226" modified="20201112223827917" tags="tags" title="todo">
 <pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
