@@ -201,6 +201,8 @@ Error message and password prompt
 
 <li>$:/isEncrypted</li>
 
+<li>$:/palette</li>
+
 <li>$:/pluginlibrary/tobibeer/official</li>
 
 <li>$:/plugins/tobibeer/appear</li>
@@ -216,6 +218,10 @@ Error message and password prompt
 <li>$:/SiteTitle</li>
 
 <li>$:/state/showeditpreview</li>
+
+<li>$:/state/ShowPaletteEditor</li>
+
+<li>$:/state/tab--1963855381</li>
 
 <li>$:/state/tab-1749438307</li>
 
@@ -281,7 +287,7 @@ Error message and password prompt
 
 <li>Daniel Thrasher</li>
 
-<li>Dark Mode</li>
+<li>Dark mode</li>
 
 <li>Dark theme</li>
 
@@ -334,6 +340,8 @@ Error message and password prompt
 <li>Latest changes</li>
 
 <li>Leadhead</li>
+
+<li>Light mode</li>
 
 <li>Lord Bung</li>
 
@@ -402,8 +410,6 @@ Error message and password prompt
 <li>Style LatestChanges</li>
 
 <li>Style List</li>
-
-<li>Style TW5</li>
 
 <li>tags</li>
 
@@ -10408,11 +10414,14 @@ Error message and password prompt
 <div created="20201112221014456" modified="20201112221022215" title="$:/GitHub/Repo">
 <pre>CuratedVideos/curatedvideos.github.io</pre>
 </div>
-<div created="20201112220827768" modified="20210126153358125" title="$:/GitHub/Username">
+<div created="20201112220827768" modified="20210126161507339" title="$:/GitHub/Username">
 <pre>CuratedVideos</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
+</div>
+<div created="20210126154217611" modified="20210126154544919" title="$:/palette">
+<pre>$:/palettes/Twilight</pre>
 </div>
 <div bag="default" caption="Official Plugin Library by Tobias Beer" modified="20160120132137178" modifier="Tobias Beer" revision="0" tags="$:/tags/PluginLibrary" title="$:/pluginlibrary/tobibeer/official" url="http://tobibeer.github.io/tw5-plugins/library/index.html">
 <pre>The plugin library for the latest and greatest plugins from [ext[tobibeer/plugins|http://tobibeer.github.io/tw5-plugins]]; officially released versions of plugins by [ext[tobibeer|https://github.com/tobibeer]].</pre>
@@ -10597,19 +10606,25 @@ Error message and password prompt
 <div created="20210118034554873" modified="20210118034554873" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20210115194926272" modified="20210116192138538" title="$:/state/tab-1749438307">
+<div created="20210126154220717" modified="20210126154220717" title="$:/state/ShowPaletteEditor">
+<pre>yes</pre>
+</div>
+<div created="20210126154209893" modified="20210126154209893" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Palette</pre>
+</div>
+<div created="20210115194926272" modified="20210126161502561" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
 <div created="20210115195113476" modified="20210116192140361" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20210115195813582" modified="20210122223740919" title="$:/state/tab/sidebar--595412856">
+<div created="20210115195813582" modified="20210126161510132" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[Dark Mode]] Home style" title="$:/StoryList">
+<div created="20210126161500592" list="Home style" modified="20210126161500592" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -10898,14 +10913,22 @@ I'm here to make your day a little easier.
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/videoseries?list=UUnZx--LpG2spgmlxOcC-DRA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 </pre>
 </div>
-<div created="20210126153605156" modified="20210126153849708" tags="$:/tags/Stylesheet TW5" title="Dark Mode" type="text/css">
-<pre>:root {
-    --darkreader-neutral-background: #131516;
-    --darkreader-neutral-text: #d8d4cf;
-    --darkreader-selection-background: #004daa;
-    --darkreader-selection-text: #e8e6e3;
+<div created="20210126155534216" modified="20210126161453800" tags="$:/tags/Stylesheet style TW5" title="Dark mode" type="text/css">
+<pre>a, .nicelist ul li span {
+    color: #ccccff;
 }
-</pre>
+
+.separationaccueil {
+  background-color: rgb(30, 32, 33);
+}
+
+.latestChanges.bullet .tc-menu-list-subitem&gt;a::marker, .nicelist ul li  {
+  color: #e8e6e3;
+}
+
+.contact {
+color: rgb(179, 179, 179);
+}</pre>
 </div>
 <div created="20201112233346208" modified="20201112233356501" tags="todo" title="Dark theme">
 <pre></pre>
@@ -11144,6 +11167,31 @@ A channel focusing mainly on artistic readings into games, their themes, ludolog
 ;Last videos uploaded :
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/videoseries?list=UU3_kehZbfRz-KrjXIqeIiPw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 </div>
+<div created="20210126154855289" modified="20210126161446901" tags="$:/tags/Stylesheet style TW5" title="Light mode">
+<pre>&lt;!--
+
+.nicelist ul li span {
+color:#5778d8;
+}
+
+
+.tc-titlebar&gt;a {
+	color: #182955;
+}
+
+.separationaccueil {
+  background-color: whitesmoke;
+}
+
+.latestChanges.bullet .tc-menu-list-subitem&gt;a::marker, .nicelist ul li  {
+  color: black;
+}
+
+.contact {
+color: black;
+}
+ --&gt;</pre>
+</div>
 <div created="20201128222858916" modified="20201128223134305" tags="channel [[2D Animation]]" title="Lord Bung">
 <pre>''channel'' : https://www.youtube.com/channel/UCr6Ojg6WA9Lk-ynphZE9gtg
 
@@ -11357,7 +11405,7 @@ The Stanford Channel on ~YouTube features videos from schools, departments and p
 &lt;$transclude tiddler=&quot;LTg#&quot;/&gt;
 </pre>
 </div>
-<div created="20201112224144075" modified="20201112224450704" tags="TW5 $:/tags/Stylesheet" title="Style Home" type="text/css">
+<div created="20201112224144075" modified="20210126160432494" tags="TW5 $:/tags/Stylesheet" title="Style Home" type="text/css">
 <pre>.derouleaccueil li {
   display: inline-block;
 }
@@ -11375,7 +11423,6 @@ li:last-of-type::after {
   padding-left: 5px;
   border-left: solid Gainsboro 6px;
   font-weight: bold;
-  background-color: whitesmoke;
 }
 
 .contact {
@@ -11384,7 +11431,6 @@ li:last-of-type::after {
   align-items: center;
 
   text-decoration: none;
-  color: black;
   opacity: 0.33;
   transition: opacity 0.3s;
 }
@@ -11470,7 +11516,7 @@ flex-grow:1;
 margin:0;
 }</pre>
 </div>
-<div created="20210114220234266" modified="20210115182605488" tags="$:/tags/Stylesheet TW5" title="Style LatestChanges" type="text/css">
+<div created="20210114220234266" modified="20210126160047118" tags="$:/tags/Stylesheet TW5" title="Style LatestChanges" type="text/css">
 <pre>/*style quote*/
 
 .latestChanges.quoted .tc-menu-list-subitem{
@@ -11490,9 +11536,6 @@ display: list-item;
 margin-left:40px;
 }
 
-.latestChanges.bullet .tc-menu-list-subitem&gt;a::marker {
-  color: black;
-}
 /*//////////////////////*/
 
 /*hide time*/
@@ -11510,26 +11553,13 @@ padding:0px;
 /*//////////////////////*/
 </pre>
 </div>
-<div created="20201112231746387" modified="20210126152405476" tags="$:/tags/Stylesheet TW5" title="Style List" type="text/css">
+<div created="20201112231746387" modified="20210126160155733" tags="$:/tags/Stylesheet TW5" title="Style List" type="text/css">
 <pre>.nicelist ul {
 height: auto;
 columns: 190px 5;
 padding:0;
 margin: 0;
 text-align:left;
-}
-
-.nicelist ul li {
-color:black;
-}
-
-.nicelist ul li span {
-color:#5778d8;
-}</pre>
-</div>
-<div created="20210115193842763" modified="20210115194221657" tags="TW5 $:/tags/Stylesheet" title="Style TW5" type="text/css">
-<pre>.tc-titlebar&gt;a {
-	color: #182955;
 }</pre>
 </div>
 <div color="#eecc66" created="20201112231556230" icon="$:/core/images/new-here-button" modified="20210126152430761" title="tags">
