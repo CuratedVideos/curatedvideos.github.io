@@ -337,6 +337,8 @@ Error message and password prompt
 
 <li>LTg</li>
 
+<li>LTg#</li>
+
 <li>Maker</li>
 
 <li>Making of a violin</li>
@@ -397,7 +399,7 @@ Error message and password prompt
 
 <li>Style LatestChanges</li>
 
-<li>Style Tags</li>
+<li>Style List</li>
 
 <li>Style TW5</li>
 
@@ -10404,7 +10406,7 @@ Error message and password prompt
 <div created="20201112221014456" modified="20201112221022215" title="$:/GitHub/Repo">
 <pre>CuratedVideos/curatedvideos.github.io</pre>
 </div>
-<div created="20201112220827768" modified="20210126150523309" title="$:/GitHub/Username">
+<div created="20201112220827768" modified="20210126153358125" title="$:/GitHub/Username">
 <pre>CuratedVideos</pre>
 </div>
 <div title="$:/isEncrypted">
@@ -10605,7 +10607,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210126150518780" list="Home style" modified="20210126150518780" title="$:/StoryList">
+<div list="Home style" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -11144,8 +11146,13 @@ Hopefully it doesn't suck
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/videoseries?list=UUr6Ojg6WA9Lk-ynphZE9gtg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 </div>
-<div created="20201112223858912" modified="20201112223927599" tags="TW5" title="LTg">
+<div created="20201112223858912" modified="20210126151150276" tags="TW5" title="LTg">
 <pre>&lt;&lt;list-links &quot;[all[current]tagging[]sort[title]]&quot;&gt;&gt;</pre>
+</div>
+<div created="20210126151429269" modified="20210126153316849" tags="TW5" title="LTg#">
+<pre>&lt;ul&gt;
+&lt;$list filter=&quot;[all[current]tagging[]sort[title]]&quot;&gt;
+&lt;$link&gt;&lt;li&gt;&lt;span&gt;&lt;$view field=&quot;title&quot;/&gt; (&lt;$count filter=&quot;[all[current]tagging[]]&quot;/&gt;)&lt;/span&gt;&lt;/li&gt;</pre>
 </div>
 <div created="20210116205545852" modified="20210116205558383" tags="style" title="Maker">
 <pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
@@ -11334,8 +11341,10 @@ The Stanford Channel on ~YouTube features videos from schools, departments and p
 <div created="20201112224247232" modified="20210101193609845" tags="TW5" title="stats">
 <pre>&lt;$count filter=&quot;[!is[system]sort[title]]&quot;/&gt; entries, &lt;$count filter=&quot;[tag[tags]]&quot;/&gt; [[tags]].</pre>
 </div>
-<div created="20201112232530977" modified="20201112232540367" tags="tags" title="style">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201112232530977" modified="20210126152458256" tags="tags" title="style">
+<pre>&lt;div class=&quot;nicelist&quot;&gt;
+&lt;$transclude tiddler=&quot;LTg#&quot;/&gt;
+</pre>
 </div>
 <div created="20201112224144075" modified="20201112224450704" tags="TW5 $:/tags/Stylesheet" title="Style Home" type="text/css">
 <pre>.derouleaccueil li {
@@ -11490,13 +11499,21 @@ padding:0px;
 /*//////////////////////*/
 </pre>
 </div>
-<div created="20201112231746387" modified="20201112231920462" tags="$:/tags/Stylesheet TW5" title="Style Tags" type="text/css">
+<div created="20201112231746387" modified="20210126152405476" tags="$:/tags/Stylesheet TW5" title="Style List" type="text/css">
 <pre>.nicelist ul {
 height: auto;
 columns: 190px 5;
 padding:0;
 margin: 0;
 text-align:left;
+}
+
+.nicelist ul li {
+color:black;
+}
+
+.nicelist ul li span {
+color:#5778d8;
 }</pre>
 </div>
 <div created="20210115193842763" modified="20210115194221657" tags="TW5 $:/tags/Stylesheet" title="Style TW5" type="text/css">
@@ -11504,12 +11521,9 @@ text-align:left;
 	color: #182955;
 }</pre>
 </div>
-<div color="#eecc66" created="20201112231556230" icon="$:/core/images/new-here-button" modified="20201112232122986" title="tags">
+<div color="#eecc66" created="20201112231556230" icon="$:/core/images/new-here-button" modified="20210126152430761" title="tags">
 <pre>&lt;div class=&quot;nicelist&quot;&gt;
-
-&lt;ul&gt;
-&lt;$list filter=&quot;[all[current]tagging[]sort[title]]&quot;&gt;
-&lt;$link&gt;&lt;li style=&quot;color:black;&quot;&gt;&lt;span style=&quot;color:#5778d8;&quot;&gt;&lt;$view field=&quot;title&quot;/&gt; (&lt;$count filter=&quot;[all[current]tagging[]]&quot;/&gt;)&lt;/span&gt;&lt;/li&gt;</pre>
+&lt;$transclude tiddler=&quot;LTg#&quot;/&gt;</pre>
 </div>
 <div created="20201112234907611" modified="20201112234917757" tags="style" title="Talk Show">
 <pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
