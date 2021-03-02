@@ -143,11 +143,15 @@ Error message and password prompt
 
 <li>$:/.mr/kookma/stylesheet/tw-version</li>
 
+<li>$:/.tb/modules/startup/hide-sidebar.js</li>
+
 <li>$:/build</li>
 
 <li>$:/config/codemirror/lineNumbers</li>
 
 <li>$:/config/Comments/EnableFilter</li>
+
+<li>$:/config/HideSidebarOnStartup</li>
 
 <li>$:/config/KookmaPluginLibrary</li>
 
@@ -230,6 +234,8 @@ Error message and password prompt
 <li>$:/GoogleAnalyticsAccount</li>
 
 <li>$:/GoogleAnalyticsDomain</li>
+
+<li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
 
@@ -854,6 +860,39 @@ Error message and password prompt
 }
 &lt;/pre&gt;</pre>
 </div>
+<div bag="default" created="20151010151732122" creator="Tobias Beer" modified="20210302223100309" module-type="startup" revision="0" tags="TW5" title="$:/.tb/modules/startup/hide-sidebar.js" type="application/javascript">
+<pre>/*\
+title: $:/.tb/modules/startup/hide-sidebar.js
+type: application/javascript
+module-type: startup
+created: 20151010151732122
+creator: Tobias Beer
+modified: 20151010151750739
+
+Hides the sidebar on startup when the config tiddler [[$:/config/hide-sidebar-on-startup]] contains &quot;yes&quot;
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+// Export name and synchronous status
+exports.name = &quot;hide-sidebar-on-startup&quot;;
+exports.platforms = [&quot;browser&quot;];
+exports.after = [&quot;startup&quot;];
+exports.synchronous = true;
+
+exports.startup = function() {
+	var conf = $tw.wiki.getTiddler(&quot;$:/config/HideSidebarOnStartup&quot;),
+		value = (conf ? conf.getFieldString(&quot;text&quot;) : &quot;&quot;).toLowerCase(),
+		state = value == &quot;yes&quot; ? &quot;no&quot; : &quot;yes&quot;;
+	$tw.wiki.setText(&quot;$:/state/sidebar&quot;, &quot;text&quot;, undefined, state);
+};
+
+})();</pre>
+</div>
 <div commit="ce8c03250cc2307fa12a992176629140c8391ab7" title="$:/build">
 <pre>Built from branch 'tiddlywiki-com' at commit ce8c03250cc2307fa12a992176629140c8391ab7 of https://github.com/Jermolene/TiddlyWiki5 at 2021-01-15 16:54:09 UTC
 </pre>
@@ -863,6 +902,9 @@ Error message and password prompt
 </div>
 <div created="20210223234642399" modified="20210223234642399" title="$:/config/Comments/EnableFilter">
 <pre>[all[current]tag[commentable]]</pre>
+</div>
+<div bag="default" created="20151007165524815" creator="Tobias Beer" modified="20210302223116553" revision="0" tags="TW5" title="$:/config/HideSidebarOnStartup" type="text/vnd.tiddlywiki">
+<pre>yes</pre>
 </div>
 <div caption="Kookma Plugin Library" created="20200306121057751" modified="20200323203955814" revision="0" tags="$:/tags/PluginLibrary" title="$:/config/KookmaPluginLibrary" type="text/vnd.tiddlywiki" url="https://kookma.github.io/TW-PluginLibrary/library/index.html">
 <pre>Kookma plugin library is a set of plugins, themes, and scripts, to extend functionality and add new features to Tiddlywiki. For detail information visit the library at [[GitHub|https://github.com/kookma]]. It is recommended to backup your data before installing any plugin, theme, or script. 
@@ -10843,7 +10885,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div created="20201112221014456" modified="20201112221022215" title="$:/GitHub/Repo">
 <pre>CuratedVideos/curatedvideos.github.io</pre>
 </div>
-<div created="20201112220827768" modified="20210302221607106" title="$:/GitHub/Username">
+<div created="20201112220827768" modified="20210302223719841" title="$:/GitHub/Username">
 <pre>CuratedVideos</pre>
 </div>
 <div created="20210224003508949" modified="20210224003508949" title="$:/GoogleAnalyticsAccount">
@@ -10851,6 +10893,12 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 </div>
 <div created="20210224003529369" modified="20210224003529369" title="$:/GoogleAnalyticsDomain">
 <pre>https://curatedvideos.github.io/</pre>
+</div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[$:/.tb/modules/startup/hide-sidebar.js]]
+# [[$:/config/HideSidebarOnStartup]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -13576,7 +13624,7 @@ $text$
 <div created="20210126154220717" modified="20210126154220717" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20210205170603975" modified="20210223230822556" title="$:/state/sidebar">
+<div created="20210205170603975" modified="20210302223711479" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210201015607791" modified="20210302190620097" title="$:/state/tab--1498284803">
@@ -13624,7 +13672,7 @@ $text$
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210302221602860" list="$:/ControlPanel Home style" modified="20210302221602860" title="$:/StoryList">
+<div created="20210302223713988" list="$:/ControlPanel Home style" modified="20210302223713988" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210223140033254" modified="20210223140221316" tags="TW5" title="$:/tags/Macro">
