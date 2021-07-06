@@ -141,6 +141,10 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>(LTg)</li>
+
+<li>(LTg#)</li>
+
 <li>$:/.mr/kookma/stylesheet/tw-version</li>
 
 <li>$:/.tb/modules/startup/hide-sidebar.js</li>
@@ -187,11 +191,17 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/tag-manager</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/unfold-all</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/plugins/kookma/commander/buttons/pagecontrol</li>
 
 <li>$:/config/plugins/menubar/MenuItems/Visibility/$:/plugins/tiddlywiki/menubar/items/topleftbar</li>
 
@@ -264,6 +274,8 @@ Error message and password prompt
 <li>$:/plugins/flibbles/relink</li>
 
 <li>$:/plugins/kookma/commander</li>
+
+<li>$:/plugins/kookma/commander/buttons/pagecontrol</li>
 
 <li>$:/plugins/kookma/favorites</li>
 
@@ -491,6 +503,8 @@ Error message and password prompt
 
 <li>$:/tags/Macro</li>
 
+<li>$:/tags/PageControls</li>
+
 <li>$:/tags/Stylesheet</li>
 
 <li>$:/tags/TextEditor/Snippet</li>
@@ -613,6 +627,8 @@ Error message and password prompt
 
 <li>Engineering</li>
 
+<li>Entertainment</li>
+
 <li>Ephemeral Rift</li>
 
 <li>ErinDoes</li>
@@ -700,10 +716,6 @@ Error message and password prompt
 <li>Logos By Nick</li>
 
 <li>Lord Bung</li>
-
-<li>LTg</li>
-
-<li>LTg#</li>
 
 <li>macro iframe-yt-list</li>
 
@@ -849,6 +861,8 @@ Error message and password prompt
 
 <li>Template channel</li>
 
+<li>Template/Display tagged &amp; category</li>
+
 <li>Templates</li>
 
 <li>Test</li>
@@ -917,6 +931,8 @@ Error message and password prompt
 
 <li>YouTube</li>
 
+<li>Zack Freedman</li>
+
 </ul>
 </p>
 
@@ -931,6 +947,14 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20201112223858912" modified="20210706101139865" tags="TW5" title="(LTg)">
+<pre>&lt;&lt;list-links &quot;[all[current]tagging[]sort[title]]&quot;&gt;&gt;</pre>
+</div>
+<div created="20210126151429269" modified="20210706101252761" tags="TW5" title="(LTg#)">
+<pre>&lt;ul&gt;
+&lt;$list filter=&quot;[all[current]tagging[]sort[title]]&quot;&gt;
+&lt;$link&gt;&lt;li&gt;&lt;span&gt;&lt;$view field=&quot;title&quot;/&gt; (&lt;$count filter=&quot;[all[current]tagging[]]&quot;/&gt;)&lt;/span&gt;&lt;/li&gt;</pre>
+</div>
 <div created="20180906042308596" creator="Mohammad" modified="20181021064233482" modifier="Mohammad" tags="kookma $:/tags/Stylesheet" title="$:/.mr/kookma/stylesheet/tw-version" type="application/x-tiddler">
 <pre>&lt;pre&gt;/* TW-version added to site title */
 .tc-site-title:before {
@@ -1014,8 +1038,8 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div created="20201112232141751" modified="20201112232141751" title="$:/config/NewJournal/Tags">
 <pre></pre>
 </div>
-<div created="20201112221923800" modified="20201112223625031" title="$:/config/NewJournal/Text">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201112221923800" modified="20210706101139872" title="$:/config/NewJournal/Text">
+<pre>&lt;$transclude tiddler=&quot;(LTg)&quot;/&gt;</pre>
 </div>
 <div created="20201112222226711" modified="20201112223738438" title="$:/config/NewJournal/Title">
 <pre>New Tag</pre>
@@ -1032,22 +1056,31 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div created="20201112221527786" modified="20201112221527786" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>show</pre>
 </div>
-<div created="20201112221610806" modified="20201112221610806" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager">
-<pre>show</pre>
+<div created="20201112221610806" modified="20210626160136506" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager">
+<pre>hide</pre>
 </div>
 <div created="20201112221618839" modified="20201112221618839" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
 <pre>show</pre>
 </div>
-<div created="20201112223703348" modified="20201112223703348" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
+<div created="20201112223703348" modified="20210626160131276" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
+<pre>hide</pre>
+</div>
+<div created="20210626160129037" modified="20210706102104817" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>show</pre>
 </div>
 <div created="20201112221536785" modified="20201112221536785" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview">
 <pre>show</pre>
 </div>
-<div created="20201112221611493" modified="20201112221611493" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/tag-manager">
+<div created="20210626160141165" modified="20210706102102218" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki">
 <pre>show</pre>
 </div>
+<div created="20201112221611493" modified="20210626160136924" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/tag-manager">
+<pre>hide</pre>
+</div>
 <div created="20201129043631627" modified="20201129043632135" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/unfold-all">
+<pre>hide</pre>
+</div>
+<div created="20210626160135719" modified="20210626160135719" title="$:/config/PageControlButtons/Visibility/$:/plugins/kookma/commander/buttons/pagecontrol">
 <pre>hide</pre>
 </div>
 <div created="20210223230839275" modified="20210223230839275" title="$:/config/plugins/menubar/MenuItems/Visibility/$:/plugins/tiddlywiki/menubar/items/topleftbar">
@@ -10967,7 +11000,7 @@ category</pre>
 <div created="20201112221014456" modified="20201112221022215" title="$:/GitHub/Repo">
 <pre>CuratedVideos/curatedvideos.github.io</pre>
 </div>
-<div created="20201112220827768" modified="20210626160050799" title="$:/GitHub/Username">
+<div created="20201112220827768" modified="20210706103512298" title="$:/GitHub/Username">
 <pre>CuratedVideos</pre>
 </div>
 <div created="20210224003508949" modified="20210224003508949" title="$:/GoogleAnalyticsAccount">
@@ -10976,10 +11009,10 @@ category</pre>
 <div created="20210224003529369" modified="20210224003529369" title="$:/GoogleAnalyticsDomain">
 <pre>https://curatedvideos.github.io/</pre>
 </div>
-<div status="complete" title="$:/Import">
+<div modified="20210706101051136" status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/danielo515/2click2edit]]</pre>
+# [[Template/Display tagged &amp; category]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -11028,8 +11061,8 @@ Mohammad Rahmani: https://github.com/kookma
 .dbadge-danger {
     background-color: #d9534f;}</pre>
 </div>
-<div caption="List of tiddlers by tag" created="20210305114154255" creator="user" modified="20210305114158334" modifier="user" tags="$:/tags/TextEditor/Snippet" title="$:/language/Snippets/ListByTag">
-<pre>{{||LTg}}</pre>
+<div caption="List of tiddlers by tag" created="20210305114154255" creator="user" modified="20210706101139872" modifier="user" tags="$:/tags/TextEditor/Snippet" title="$:/language/Snippets/ListByTag">
+<pre>{{||(LTg)}}</pre>
 </div>
 <div caption="Open tagged tiddlers in a new tab" created="20210313134045652" modified="20210313134455667" tags="$:/tags/TextEditor/Snippet" title="$:/language/Snippets/TgNT">
 <pre>{{TgNT}}</pre>
@@ -12880,6 +12913,24 @@ $text$
     }
 }</pre>
 </div>
+<div caption="{{$:/plugins/kookma/commander/images/file-alt}} {{$:/language/Buttons/Commander/Caption}}" created="20190724145015836" description="Open tiddler commander" modified="20210626160159897" tags="$:/tags/PageControls" title="$:/plugins/kookma/commander/buttons/pagecontrol" type="text/vnd.tiddlywiki">
+<pre>\whitespace trim
+\define commander-button(class)
+&lt;$button to=&quot;$:/Commander&quot; tooltip={{$:/language/Buttons/Commander/Hint}} aria-label={{$:/language/Buttons/Commander/Caption}} class=&quot;&quot;&quot;$(tv-config-toolbar-class)$ $class$&quot;&quot;&quot;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;
+{{$:/plugins/kookma/commander/images/commander.svg}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;&lt;$text text={{$:/language/Buttons/Commander/Caption}}/&gt;&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+\end
+
+&lt;$list filter=&quot;[list[$:/StoryList]] +[field:title[$:/Commander]]&quot; emptyMessage=&lt;&lt;commander-button&gt;&gt;&gt;
+&lt;&lt;commander-button &quot;tc-selected&quot;&gt;&gt;
+&lt;/$list&gt;
+</pre>
+</div>
 <div author="Mohammad Rahmani" core-version="&gt;=5.1.22" dependents="" description="Favorites" list="readme history license" plugin-type="plugin" source="https://github.com/kookma/TW-Favorites" title="$:/plugins/kookma/favorites" type="application/json" version="4.4.0">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -14339,8 +14390,8 @@ $text$
 <div created="20210222232608735" modified="20210303003213375" title="$:/state/addplugins/tab-1342078386">
 <pre>$:/pluginlibrary/tobibeer/official</pre>
 </div>
-<div created="20210201015607790" modified="20210404092616137" title="$:/state/advancedsearch/currentTab">
-<pre>$:/core/ui/AdvancedSearch/System</pre>
+<div created="20210201015607790" modified="20210706102220088" title="$:/state/advancedsearch/currentTab">
+<pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
 <div title="$:/state/consent-banner/accepted">
 <pre>yes</pre>
@@ -14399,14 +14450,14 @@ $text$
 <div created="20210126154220717" modified="20210126154220717" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20210205170603975" modified="20210626155748454" title="$:/state/sidebar">
+<div created="20210205170603975" modified="20210706100353966" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20210201015607791" modified="20210404092616137" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/System</pre>
+<div created="20210201015607791" modified="20210706102220088" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
-<div created="20210126154209893" modified="20210328023204886" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Palette</pre>
+<div created="20210126154209893" modified="20210626160114771" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
 <div created="20210222232902280" modified="20210222232909132" title="$:/state/tab--2072517985">
 <pre>$:/plugins/kookma/favorites/manager/export</pre>
@@ -14417,7 +14468,7 @@ $text$
 <div created="20210302233222510" modified="20210302233222510" title="$:/state/tab--757196817">
 <pre>$:/plugins/kookma/commander/help/uicomp/snr</pre>
 </div>
-<div created="20210115194926272" modified="20210626155805115" title="$:/state/tab-1749438307">
+<div created="20210115194926272" modified="20210706103508831" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
 <div created="20210223225010417" modified="20210223225012960" title="$:/state/tab-1846149089">
@@ -14435,11 +14486,11 @@ $text$
 <div created="20210222230414004" modified="20210223230643556" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20210115195813582" modified="20210328023452987" title="$:/state/tab/sidebar--595412856">
+<div created="20210115195813582" modified="20210706102212923" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div created="20210127000723467" modified="20210222234258946" title="$:/state/tabs/controlpanel/toolbars-1345989671">
-<pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
+<div created="20210127000723467" modified="20210626160120644" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
 </div>
 <div created="20210223000500416" modified="20210223000506783" title="$:/state/tamasha/listbox/Test presentation myTalk/presenter--254053141">
 <pre></pre>
@@ -14450,17 +14501,20 @@ $text$
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210626160047253" list="$:/ControlPanel Home category" modified="20210626160047253" title="$:/StoryList">
+<div created="20210706103506806" list="$:/ControlPanel Home category" modified="20210706103506806" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20210223140033254" modified="20210223140221316" tags="TW5" title="$:/tags/Macro">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210223140033254" modified="20210706101139872" tags="TW5" title="$:/tags/Macro">
+<pre>&lt;$transclude tiddler=&quot;(LTg)&quot;/&gt;</pre>
 </div>
-<div created="20210211144042213" modified="20210211144048756" tags="TW5" title="$:/tags/Stylesheet">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210626160159899" list="$:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/plugins/kookma/commander/buttons/pagecontrol $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions" modified="20210626160159899" title="$:/tags/PageControls">
+<pre></pre>
 </div>
-<div created="20210302233348172" modified="20210302233417691" tags="TW5" title="$:/tags/TextEditor/Snippet">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210211144042213" modified="20210706101139872" tags="TW5" title="$:/tags/Stylesheet">
+<pre>&lt;$transclude tiddler=&quot;(LTg)&quot;/&gt;</pre>
+</div>
+<div created="20210302233348172" modified="20210706101139872" tags="TW5" title="$:/tags/TextEditor/Snippet">
+<pre>&lt;$transclude tiddler=&quot;(LTg)&quot;/&gt;</pre>
 </div>
 <div created="20210205162920894" modified="20210205162930469" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -14583,8 +14637,8 @@ $text$
 <div created="20201129043801427" modified="20201129043801427" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20201128223052410" modified="20210626155941408" tags="category" title="2D Animation">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201128223052410" modified="20210706101811154" tags="category" title="2D Animation">
+<pre></pre>
 </div>
 <div created="20201129004737561" modified="20210302234201457" tags="channel Education Mathematics" title="3Blue1Brown">
 <pre>''channel'' : https://www.youtube.com/c/3blue1brown
@@ -14597,8 +14651,8 @@ $text$
 
 &lt;&lt;iframe-yt-list UUYO_jab_esuFRV4b17AJtAw &gt;&gt;</pre>
 </div>
-<div created="20201112233225337" modified="20210626155941408" tags="category" title="3D">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201112233225337" modified="20210706101815996" tags="category" title="3D">
+<pre></pre>
 </div>
 <div created="20201112233400810" modified="20201112233853867" tags="doing" title="Adding channels to the wiki">
 <pre></pre>
@@ -14622,8 +14676,8 @@ Is that too much to ask ? Well, possibly...
 
 &lt;&lt;iframe-yt-list UUPzFLpOblZEaIx2lpym1l1A &gt;&gt;</pre>
 </div>
-<div created="20210321234037284" modified="20210321234040968" title="Animatic">
-<pre>{{||LTg}}</pre>
+<div created="20210321234037284" modified="20210706101139872" title="Animatic">
+<pre>{{||(LTg)}}</pre>
 </div>
 <div created="20210117015623205" modified="20210302234241475" tags="3D Tutorial Maya channel" title="antCGi">
 <pre>''channel'' : https://www.youtube.com/channel/UCN_JHIw0zGtCIWMTQGNqbmg
@@ -14647,8 +14701,8 @@ Founded in 2014 by industry veteran Antony Ward, author of Game Character Develo
 &lt;&lt;iframe-yt-list UUEr55381WIqO1w_IzgcI5DQ &gt;&gt;
 </pre>
 </div>
-<div created="20210211004226043" modified="20210626155941409" tags="category" title="ASMR">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210211004226043" modified="20210706101820760" tags="category" title="ASMR">
+<pre></pre>
 </div>
 <div created="20210211004315781" modified="20210302234332267" tags="channel ASMR" title="ASMR Glow">
 <pre>''channel'' : https://www.youtube.com/c/JinxASMR
@@ -14693,8 +14747,8 @@ Just a bunch of boys who love dance concerts, hanging out with friends, Tony Bar
 &lt;&lt;iframe-yt-list UU_mneEC0wc29EGGmIsN_xLA &gt;&gt;
 </pre>
 </div>
-<div created="20210222230827190" modified="20210222231048666" tags="TW5" title="badge">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210222230827190" modified="20210706101139873" tags="TW5" title="badge">
+<pre>&lt;$transclude tiddler=&quot;(LTg)&quot;/&gt;</pre>
 </div>
 <div created="20210129003425481" modified="20210302234436203" tags="[[Comedy Shorts]] channel [[Short Film]] [[Stop motion]] Puppetry" title="barnabydixon">
 <pre>''channel'' : https://www.youtube.com/user/barnabydixon
@@ -14709,11 +14763,11 @@ This has become my job...
 &lt;&lt;iframe-yt-list UUxseO_JzIiiJENauW2RmcJQ &gt;&gt;
 </pre>
 </div>
-<div created="20210201015545359" modified="20210626155941409" tags="category" title="Biology">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210201015545359" modified="20210706101825742" tags="category" title="Biology">
+<pre></pre>
 </div>
-<div created="20210116193138392" modified="20210313133842996" tags="" title="Blender">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210116193138392" modified="20210706101829068" tags="category" title="Blender">
+<pre></pre>
 </div>
 <div created="20210116192737259" modified="20210302234509551" tags="3D Tutorial Blender channel" title="Blender Guru">
 <pre>''channel'' : https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g
@@ -14769,10 +14823,8 @@ Captain Disillusion guides children of all ages through the maze of visual faker
 ;Last videos uploaded :
 &lt;&lt;iframe-yt-list UUEOXxzW2vU0P-0THehuIIeg &gt;&gt;</pre>
 </div>
-<div created="20201112232530977" modified="20210626155941398" tags="tags" title="category">
-<pre>&lt;div class=&quot;nicelist&quot;&gt;
-&lt;$transclude tiddler=&quot;LTg#&quot;/&gt;
-</pre>
+<div created="20201112232530977" modified="20210706103410868" tags="tags count nicelist" title="category">
+<pre></pre>
 </div>
 <div created="20210302124943010" modified="20210302234639729" tags="Blender 3D Tutorial channel" title="CG Boost">
 <pre>''channel'' : https://www.youtube.com/c/CGBoost
@@ -14816,23 +14868,22 @@ Take your skills to the highest levels with the CG Fast Track Tutorial Library: 
 ;Last videos uploaded :
 &lt;&lt;iframe-yt-list UUy1f4m64dwCwk8CBZ_vHfPg &gt;&gt;</pre>
 </div>
-<div created="20201112232319217" modified="20210129153228810" tags="tags" title="channel">
-<pre>&lt;div class=&quot;nicelist&quot;&gt;
-&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201112232319217" modified="20210706101647342" tags="tags" title="channel">
+<pre></pre>
 </div>
 <div created="20210302133135634" modified="20210302221546097" tags="list" title="Channels focused on blender tutorials">
 <pre>&lt;a href=&quot;#:[tag[channel]tag[Blender]]&quot; target=&quot;_blank&quot;&gt;Open all in a new tab&lt;/a&gt;
 &lt;hr&gt;
 &lt;&lt;list-links &quot;[tag[channel]tag[Blender]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20210116205605283" modified="20210626155941409" tags="category" title="Chemistry">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210116205605283" modified="20210706101832917" tags="category" title="Chemistry">
+<pre></pre>
 </div>
-<div created="20210126150045947" modified="20210626155941409" tags="category" title="Comedy">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210126150045947" modified="20210706101836369" tags="category" title="Comedy">
+<pre></pre>
 </div>
-<div created="20201114212905719" modified="20210626155941409" tags="category" title="Comedy Shorts">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201114212905719" modified="20210706101839671" tags="category" title="Comedy Shorts">
+<pre></pre>
 </div>
 <div created="20210115183047984" modified="20210205185552172" tags="[[2D Animation]] Webserie" title="Confinement">
 <pre>''channel'' : https://www.youtube.com/c/LordBung
@@ -14848,11 +14899,11 @@ Animated horror/comedy series based on the SCP wiki! By Lord Bung
 &lt;div class=&quot;container-iframe&quot;&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/videoseries?list=PLEXIiC3q94eO992TlwBD98Zast0gret1r&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 </div>
-<div created="20201128222015052" modified="20210626155941409" tags="category" title="Cooking">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201128222015052" modified="20210706101843374" tags="category" title="Cooking">
+<pre></pre>
 </div>
-<div created="20201129032650451" modified="20210626155941409" tags="category" title="Crafting">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201129032650451" modified="20210706101846962" tags="category" title="Crafting">
+<pre></pre>
 </div>
 <div created="20201128221718468" modified="20210302234749064" tags="channel Education" title="CrashCourse">
 <pre>''channel'' : https://www.youtube.com/user/crashcourse/featured
@@ -14997,8 +15048,8 @@ I'm here to make your day a little easier.
 <div created="20201112233346208" modified="20210126235346634" tags="done" title="Dark theme">
 <pre></pre>
 </div>
-<div created="20201128224701259" modified="20210626155941409" tags="category" title="Debunking">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201128224701259" modified="20210706101850374" tags="category" title="Debunking">
+<pre></pre>
 </div>
 <div created="20210302224357398" modified="20210302234906029" tags="channel 3D Blender Tutorial" title="Derek Elliott">
 <pre>''channel'' : https://www.youtube.com/c/DerekElliott
@@ -15011,20 +15062,20 @@ Thanks for checking out my channel! It's here where I post Blender 3D tips, tric
 
 &lt;&lt;iframe-yt-list UUk7IufzS4r8v76NeWR6A3dg &gt;&gt;</pre>
 </div>
-<div created="20210224002525198" modified="20210626155941409" tags="category" title="Design">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210224002525198" modified="20210706101854087" tags="category" title="Design">
+<pre></pre>
 </div>
-<div created="20210101181121828" modified="20210626155941409" tags="category" title="Dev logs">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210101181121828" modified="20210706101857472" tags="category" title="Dev logs">
+<pre></pre>
 </div>
-<div created="20201112234956267" modified="20210626155941409" tags="category" title="Documentaries">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201112234956267" modified="20210706101900711" tags="category" title="Documentaries">
+<pre></pre>
 </div>
-<div color="#e8aa0c" created="20201112223829885" icon="$:/core/images/refresh-button" modified="20210126235815931" tags="tags" title="doing">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div color="#e8aa0c" created="20201112223829885" icon="$:/core/images/refresh-button" modified="20210706101728291" tags="tags" title="doing">
+<pre></pre>
 </div>
-<div color="#25ff06" created="20201112223833845" icon="$:/core/images/done-button" modified="20210126235832614" tags="tags" title="done">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div color="#25ff06" created="20201112223833845" icon="$:/core/images/done-button" modified="20210706101738855" tags="tags" title="done">
+<pre></pre>
 </div>
 <div created="20210120005422379" modified="20210205185544972" tags="Parody Webserie [[2D Animation]]" title="Dragon Ball Z Abridged">
 <pre>''channel'' : https://www.youtube.com/channel/UCsvazPPlhZlch0-Z3wPByeg
@@ -15038,8 +15089,8 @@ Team Four Star's Dragonball Z Abridged Parody follows the adventures of Goku, Go
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/videoseries?list=PL6EC7B047181AD013
 &quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 </div>
-<div created="20210223224130122" modified="20210626155941409" tags="category" title="Drawing">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210223224130122" modified="20210706101903960" tags="category" title="Drawing">
+<pre></pre>
 </div>
 <div created="20210302125753098" modified="20210302234929832" tags="channel 3D Blender Tutorial" title="Ducky 3D">
 <pre>''channel'' : https://www.youtube.com/channel/UCuNhGhbemBkdflZ1FGJ0lUQ
@@ -15052,11 +15103,14 @@ Hi my name is Nathan Duck, i'm a graphic designer and amateur 3D artist. I make 
 
 &lt;&lt;iframe-yt-list UUuNhGhbemBkdflZ1FGJ0lUQ &gt;&gt;</pre>
 </div>
-<div created="20201128220446635" modified="20210626155941409" tags="category" title="Education">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201128220446635" modified="20210706101907453" tags="category" title="Education">
+<pre></pre>
 </div>
-<div created="20210116210139580" modified="20210626155941410" tags="category" title="Engineering">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210116210139580" modified="20210706101910832" tags="category" title="Engineering">
+<pre></pre>
+</div>
+<div created="20210706100746070" modified="20210706102049901" tags="category" title="Entertainment">
+<pre></pre>
 </div>
 <div created="20210211003612906" modified="20210302234954172" tags="channel ASMR" title="Ephemeral Rift">
 <pre>''channel'' : https://www.youtube.com/c/EphemeralRift
@@ -15104,8 +15158,8 @@ We make short films, and series, often using digital platforms like video games 
 [x] 4
 [x] 1</pre>
 </div>
-<div created="20210201015828409" modified="20210626155941410" tags="category" title="Experiments">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210201015828409" modified="20210706101914129" tags="category" title="Experiments">
+<pre></pre>
 </div>
 <div created="20210302174452210" modified="20210303145220567" tags="icon SVG" title="External_Link_Icon" type="image/svg+xml">
 <pre>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 17.142857&quot; height=&quot;10px&quot; class=&quot;tc-image-button&quot; fill=&quot;#b0b0db&quot; &gt;
@@ -15158,11 +15212,11 @@ My main goal in making this channel is to create a strong tight-knit community. 
 ;dev logs serie :
 &lt;&lt;iframe-yt-list UULweX1UtQjRjj7rs_0XQ2Eg &gt;&gt;</pre>
 </div>
-<div created="20201112235927811" modified="20210626155941410" tags="category" title="Gaming">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201112235927811" modified="20210706101917254" tags="category" title="Gaming">
+<pre></pre>
 </div>
-<div created="20210224001537646" modified="20210224001538737" title="GIMP">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210224001537646" modified="20210706101139874" title="GIMP">
+<pre>&lt;$transclude tiddler=&quot;(LTg)&quot;/&gt;</pre>
 </div>
 <div created="20190820101208291" creator="Mohammad" modified="20190820101213658" modifier="Mohammad" title="GitHub">
 <pre>https://github.com</pre>
@@ -15223,8 +15277,8 @@ Join our Discord here: http://healthygamer.gg/supportgroup
 &lt;&lt;iframe-yt-list UUlHVl2N3jPEbkNJVx-ItQIQ &gt;&gt;
  </pre>
 </div>
-<div created="20201128220631754" modified="20210626155941410" tags="category" title="History">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201128220631754" modified="20210706101920485" tags="category" title="History">
+<pre></pre>
 </div>
 <div created="20201112222311414" modified="20210406120738861" title="Home">
 <pre>^^{{stats}}^^
@@ -15264,8 +15318,8 @@ You can download this wiki by clicking the {{$:/core/ui/Buttons/save-wiki}} butt
 
 &lt;a role=&quot;info&quot; href=&quot;mailto:curatedvideos.contact@gmail.com&quot; class=&quot;contact&quot;&gt;&lt;span class=&quot;wave&quot;&gt;&amp;#128075;&lt;/span&gt;curatedvideos.contact@gmail.com&lt;/a&gt;  </pre>
 </div>
-<div created="20201114213003565" modified="20210626155941410" tags="category" title="Horror">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201114213003565" modified="20210706101923447" tags="category" title="Horror">
+<pre></pre>
 </div>
 <div created="20210117120518272" modified="20210302235415247" tags="Maker Cooking Technology Engineering channel" title="How To Make Everything">
 <pre>''channel'' : https://www.youtube.com/channel/UCfIqCzQJXvYj9ssCoHq327g
@@ -15316,8 +15370,8 @@ If the Emperor had a Text-to-Speech Device is a satire series with basis on the 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/videoseries?list=PLyiDf91_bTEgnBN0jAvzNbqzrlMGID5WA
 &quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 </div>
-<div created="20210224001522311" modified="20210224001523807" title="Inkscape">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210224001522311" modified="20210706101139874" title="Inkscape">
+<pre>&lt;$transclude tiddler=&quot;(LTg)&quot;/&gt;</pre>
 </div>
 <div created="20210224173858105" modified="20210302235515822" tags="3D Tutorial Blender channel" title="InLightVFX">
 <pre>''channel'' : https://www.youtube.com/c/InLightVFX
@@ -15329,8 +15383,8 @@ I'm a commercial director using Blender 3D to add CGI to the real world! I post 
 ;Last videos uploaded :
 &lt;&lt;iframe-yt-list UULrs8KcyJ13WQ7kO7mMCkPQ &gt;&gt;</pre>
 </div>
-<div created="20210116210201451" modified="20210626155941410" tags="category" title="Innovation">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210116210201451" modified="20210706101926648" tags="category" title="Innovation">
+<pre></pre>
 </div>
 <div created="20210303010103837" modified="20210303010321979" tags="channel [[Dev logs]]" title="Isto Inc.">
 <pre>''channel'' : https://www.youtube.com/c/IstoInc
@@ -15513,14 +15567,6 @@ Hopefully it doesn't suck
 ;Last videos uploaded :
 &lt;&lt;iframe-yt-list UUr6Ojg6WA9Lk-ynphZE9gtg &gt;&gt;</pre>
 </div>
-<div created="20201112223858912" modified="20210315152601287" tags="TW5" title="LTg">
-<pre>&lt;&lt;list-links &quot;[all[current]tagging[]sort[title]]&quot;&gt;&gt;</pre>
-</div>
-<div created="20210126151429269" modified="20210129152938044" tags="TW5" title="LTg#">
-<pre>&lt;ul&gt;
-&lt;$list filter=&quot;[all[current]tagging[]sort[title]]&quot;&gt;
-&lt;$link&gt;&lt;li&gt;&lt;span&gt;&lt;$view field=&quot;title&quot;/&gt; (&lt;$count filter=&quot;[all[current]tagging[]]&quot;/&gt;)&lt;/span&gt;&lt;/li&gt;</pre>
-</div>
 <div created="20210302230441181" modified="20210302232505374" tags="TW5 $:/tags/Macro" title="macro iframe-yt-list">
 <pre>\define iframe-yt-list(id:&quot;dQw4w9WgXcQ&quot; inline-style:&quot;&quot; class:&quot;&quot;)
 
@@ -15571,17 +15617,17 @@ Hopefully it doesn't suck
 
 \end</pre>
 </div>
-<div created="20210116205545852" modified="20210626155941410" tags="category" title="Maker">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210116205545852" modified="20210706101931457" tags="category" title="Maker">
+<pre></pre>
 </div>
 <div created="20210122224241798" modified="20210122224318053" tags="Video Voiceless" title="Making of a violin">
 <pre>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/iphJwCNbNSI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 </div>
-<div created="20201129004918177" modified="20210626155941410" tags="category" title="Mathematics">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201129004918177" modified="20210706101934857" tags="category" title="Mathematics">
+<pre></pre>
 </div>
-<div created="20210129170740604" modified="20210626155941410" tags="category" title="Mental health">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210129170740604" modified="20210706101938109" tags="category" title="Mental health">
+<pre></pre>
 </div>
 <div created="20210302224518079" modified="20210302235857820" tags="3D Blender Tutorial channel" title="Midge Sinnaeve">
 <pre>''channel'' : https://www.youtube.com/c/MidgeSinnaeve
@@ -15593,8 +15639,8 @@ Quick Tips &amp; Weird Shit
 ;Last videos uploaded :
 &lt;&lt;iframe-yt-list UUChYCkbgArLsCl5DWlxuKhQ &gt;&gt;</pre>
 </div>
-<div created="20210201020655312" modified="20210626155941410" tags="category" title="Music">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210201020655312" modified="20210706101941410" tags="category" title="Music">
+<pre></pre>
 </div>
 <div created="20210122223742924" modified="20210302235917306" tags="Maker Engineering Voiceless channel" title="my mechanics">
 <pre>''channel'' : https://www.youtube.com/c/mymechanics
@@ -15684,8 +15730,8 @@ yee haw
 ;Last videos uploaded :
 &lt;&lt;iframe-yt-list UU7jgYzdgU160Vizu4vWTx6Q &gt;&gt;</pre>
 </div>
-<div created="20201129033045537" modified="20210626155941410" tags="category" title="Physics">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201129033045537" modified="20210706101944646" tags="category" title="Physics">
+<pre></pre>
 </div>
 <div created="20210201015358098" modified="20210303000100164" tags="channel Education Physics" title="Physics Girl">
 <pre>''channel'' : https://www.youtube.com/c/physicsgirl
@@ -15710,8 +15756,8 @@ While I work on a lot of different things, I generaly focus on rigging and anima
 ;Last videos uploaded :
 &lt;&lt;iframe-yt-list UUXxtsisIDLiiL6YZFrORkUg &gt;&gt;</pre>
 </div>
-<div created="20210129162623945" modified="20210626155941410" tags="category" title="Popular science">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210129162623945" modified="20210706101947750" tags="category" title="Popular science">
+<pre></pre>
 </div>
 <div created="20201128220823770" modified="20210303000209297" tags="channel Education Crafting Technology Voiceless" title="Primitive Technology">
 <pre>''channel'' : https://www.youtube.com/channel/UCAL3JXZSzSm8AlZyD3nQdBA
@@ -15724,8 +15770,8 @@ Primitive technology is a hobby where you build things in the wild completely fr
 &lt;&lt;iframe-yt-list UUAL3JXZSzSm8AlZyD3nQdBA &gt;&gt;
 </pre>
 </div>
-<div created="20210313140100897" modified="20210626155941410" tags="category" title="Procedural">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210313140100897" modified="20210706101950956" tags="category" title="Procedural">
+<pre></pre>
 </div>
 <div created="20210223223857665" modified="20210430214038062" tags="channel Drawing Tutorial Anatomy" title="Proko">
 <pre>''channel'' : https://www.youtube.com/c/ProkoTV
@@ -15742,11 +15788,11 @@ I’ll be your host for most of the videos, but there will be other instructors 
 
 &lt;&lt;iframe-yt-list UUlM2LuQ1q5WEc23462tQzBg &gt;&gt;</pre>
 </div>
-<div created="20210115173654021" modified="20210626155941410" tags="category" title="Psychology">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210115173654021" modified="20210706101954061" tags="category" title="Psychology">
+<pre></pre>
 </div>
-<div created="20210129004037758" modified="20210626155941410" tags="category" title="Puppetry">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210129004037758" modified="20210706101957201" tags="category" title="Puppetry">
+<pre></pre>
 </div>
 <div created="20210118034543363" modified="20210303000300744" tags="3D Tutorial VFX Blender channel" title="pwnisher">
 <pre>''channel'' : https://www.youtube.com/c/pwnisher/
@@ -15783,8 +15829,8 @@ that one aussie game dev bald guy
 ;dev logs serie :
 &lt;&lt;iframe-yt-list PLs2N5JHGY_wiwAdkxJVDxOz-oWHVtn4On &gt;&gt;</pre>
 </div>
-<div created="20201112232506732" modified="20210626155941410" tags="category" title="Reviews">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201112232506732" modified="20210706102000369" tags="category" title="Reviews">
+<pre></pre>
 </div>
 <div created="20201128224923378" modified="20210303000346622" tags="Horror Weird channel" title="Scp channels">
 <pre>The SCP Foundation is a fictional organization responsible for locating and containing individuals, entities, locations, and objects that violate natural law (referred to as SCPs). Channels entirely dedicated to SCPs will be listed bellow.
@@ -15869,14 +15915,14 @@ Stay curious!
 ;Last videos uploaded :
 &lt;&lt;iframe-yt-list UUkxMlA7rt-mnIc1AjbyAsPw &gt;&gt;</pre>
 </div>
-<div created="20201128225837416" modified="20210626155941411" tags="category" title="Sexual Education">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201128225837416" modified="20210706102003468" tags="category" title="Sexual Education">
+<pre></pre>
 </div>
-<div created="20201128224615590" modified="20210626155941411" tags="category" title="SFX">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201128224615590" modified="20210706102006504" tags="category" title="SFX">
+<pre></pre>
 </div>
-<div created="20201128222756247" modified="20210626155941411" tags="category" title="Short Film">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201128222756247" modified="20210706102009697" tags="category" title="Short Film">
+<pre></pre>
 </div>
 <div created="20210321223456439" modified="20210321223640255" tags="Video Music Animatic" title="Sincerely, Me - Dear Evan Hansen Animatic">
 <pre>creator : szin
@@ -15924,8 +15970,8 @@ The Stanford Channel on ~YouTube features videos from schools, departments and p
 <div created="20201112224247232" modified="20210129153200842" tags="TW5" title="stats">
 <pre>&lt;$count filter=&quot;[!is[system]sort[title]]&quot;/&gt; entries, &lt;$count filter=&quot;[tag[tags]]&quot;/&gt; [[tags]], &lt;$count filter=&quot;[tag[channel]]&quot;/&gt; [[channels|channel]].</pre>
 </div>
-<div created="20210129004017133" modified="20210626155941411" tags="category" title="Stop motion">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210129004017133" modified="20210706102013062" tags="category" title="Stop motion">
+<pre></pre>
 </div>
 <div created="20210217143525743" modified="20210217143624511" tags="Engineering Maker Innovation Technology" title="Stuff Made Here">
 <pre>''channel'' : https://www.youtube.com/c/StuffMadeHere
@@ -16273,15 +16319,15 @@ programs i use:
 
 &lt;&lt;iframe-yt-list UUrzYfbkW3iKGqMYyERSr_Cw &gt;&gt;</pre>
 </div>
-<div color="#eecc66" created="20201112231556230" icon="$:/core/images/new-here-button" modified="20210126152430761" title="tags">
+<div color="#eecc66" created="20201112231556230" icon="$:/core/images/new-here-button" modified="20210706101252764" title="tags">
 <pre>&lt;div class=&quot;nicelist&quot;&gt;
-&lt;$transclude tiddler=&quot;LTg#&quot;/&gt;</pre>
+&lt;$transclude tiddler=&quot;(LTg#)&quot;/&gt;</pre>
 </div>
-<div created="20201112234907611" modified="20210626155941411" tags="category" title="Talk Show">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201112234907611" modified="20210706102016121" tags="category" title="Talk Show">
+<pre></pre>
 </div>
-<div created="20210304002738074" creator="user" modified="20210305113045270" modifier="user" tags="Tiddlytask" title="task-control">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210304002738074" creator="user" modified="20210706101139875" modifier="user" tags="Tiddlytask" title="task-control">
+<pre>&lt;$transclude tiddler=&quot;(LTg)&quot;/&gt;</pre>
 </div>
 <div caption="task-control" created="20210303171128800" list="" modified="20210304002836703" tags="task-control $:/tags/TextEditor/Snippet" title="task-control snippet">
 <pre>&lt;&lt;task-control&gt;&gt;</pre>
@@ -16296,8 +16342,8 @@ We started off as a small computer business but we began making laser videos on 
 ;Last videos uploaded :
 &lt;&lt;iframe-yt-list UUVSHXNNBitaPd5lYz48--yg &gt;&gt;</pre>
 </div>
-<div created="20201128220709567" modified="20210626155941411" tags="category" title="Technology">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201128220709567" modified="20210706102019100" tags="category" title="Technology">
+<pre></pre>
 </div>
 <div created="20201112224820039" modified="20210303000707519" tags="channel Reviews Education Technology History Documentaries [[Popular science]]" title="Technology Connections">
 <pre>''channel'' : https://www.youtube.com/channel/UCy0tKL1T7wFoYcxCe0xjN6Q
@@ -16309,8 +16355,8 @@ Most of Technology Connections' videos usually consist of the host Alec discussi
 ;Last videos uploaded :
 &lt;&lt;iframe-yt-list UUy0tKL1T7wFoYcxCe0xjN6Q &gt;&gt;</pre>
 </div>
-<div created="20210201020923083" modified="20210201020932304" tags="TW5" title="template">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210201020923083" modified="20210706101139875" tags="TW5" title="template">
+<pre>&lt;$transclude tiddler=&quot;(LTg)&quot;/&gt;</pre>
 </div>
 <div caption="[template] channel" created="20201112234713275" modified="20210302233616088" tags="template $:/tags/TextEditor/Snippet" title="Template channel" type="caption">
 <pre>''channel'' : 
@@ -16322,6 +16368,45 @@ Most of Technology Connections' videos usually consist of the host Alec discussi
 ;Last videos uploaded :
 
 &lt;&lt;iframe-yt-list PLAYLIST_ID_HERE &gt;&gt;</pre>
+</div>
+<div created="20210525120921831" creator="user" modified="20210706103352834" modifier="user" tags="TW5 $:/tags/ViewTemplate" title="Template/Display tagged &amp; category">
+<pre>&lt;$list filter=&quot;[all[current]tag[nicelist]]&quot;&gt;
+&lt;div class=&quot;nicelist&quot;&gt;
+
+
+&lt;$list filter=&quot;[all[current]tag[tags]!tag[count]]&quot;&gt;
+{{||(LTg)}}
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;[all[current]tag[tags]tag[count]]&quot;&gt;
+{{||(LTg#)}}
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;[all[current]tag[category]]&quot;&gt;
+{{||(LTg)}}
+&lt;/$list&gt;
+
+
+&lt;/div&gt;
+
+&lt;/$list&gt;
+
+
+&lt;$list filter=&quot;[all[current]!tag[nicelist]]&quot;&gt;
+
+&lt;$list filter=&quot;[all[current]tag[tags]!tag[count]]&quot;&gt;
+{{||(LTg)}}
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;[all[current]tag[tags]tag[count]]&quot;&gt;
+{{||(LTg#)}}
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;[all[current]tag[category]]&quot;&gt;
+{{||(LTg)}}
+&lt;/$list&gt;
+
+&lt;/$list&gt;</pre>
 </div>
 <div created="20210101192728514" modified="20210101194143017" tags="TW5" title="Templates">
 <pre>* [[channel|Template channel]]
@@ -16361,8 +16446,8 @@ see https://reidgould.github.io/tiddlywiki-dropboard/#Drag%20n'%20Drop%20In%20St
 &lt;/$button&gt;
 &lt;/$vars&gt;</pre>
 </div>
-<div created="20210129163018919" modified="20210626155941411" tags="category" title="Thought experiment">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210129163018919" modified="20210706102022157" tags="category" title="Thought experiment">
+<pre></pre>
 </div>
 <div created="20190409194412094" creator="Mohammad" modified="20190820064159291" modifier="Mohammad" tags="start" title="Tiddlywiki and GitHub Saver">
 <pre>!! Instruction
@@ -16413,8 +16498,8 @@ Here's a big quote
 
 </pre>
 </div>
-<div color="#ff0000" created="20201112223824226" icon="$:/core/images/close-others-button" modified="20210127000044782" tags="tags" title="todo">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div color="#ff0000" created="20201112223824226" icon="$:/core/images/close-others-button" modified="20210706101749039" tags="tags" title="todo">
+<pre></pre>
 </div>
 <div created="20210126235256518" modified="20210126235326193" tags="todo" title="todo : switch for dark/light mode">
 <pre></pre>
@@ -16430,8 +16515,8 @@ I put useful tutorials, how-to guides and other things here. This channel is mor
 
 &lt;&lt;iframe-yt-list UUkih2oVTbXPEpVwE-U7kmHw &gt;&gt;</pre>
 </div>
-<div created="20201112233147298" modified="20210626155941411" tags="category" title="Tutorial">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201112233147298" modified="20210706102025081" tags="category" title="Tutorial">
+<pre></pre>
 </div>
 <div created="20210129152821971" modified="20210129153535901" tags="TW5" title="TW5">
 <pre>&lt;&lt;list-links &quot;[all[current]tagging[]![TW5]sort[title]]&quot;&gt;&gt;</pre>
@@ -16453,8 +16538,8 @@ Brian David Gilbert tries to unravel game lore without losing his grip on realit
 <div created="20201112223933574" modified="20201112224036269" tags="done" title="Upload wiki">
 <pre></pre>
 </div>
-<div created="20210224001436152" modified="20210626155941411" tags="category" title="Vector Design">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210224001436152" modified="20210706102030488" tags="category" title="Vector Design">
+<pre></pre>
 </div>
 <div created="20210129162324829" modified="20210303000751723" tags="channel Education Documentaries [[Popular science]]" title="Veritasium">
 <pre>''channel'' : https://www.youtube.com/c/veritasium
@@ -16467,14 +16552,14 @@ An element of truth - videos about science, education, and anything else I find 
 &lt;&lt;iframe-yt-list UUHnyfMqiRRG1u-2MsSQLbXA &gt;&gt;
  </pre>
 </div>
-<div created="20210118034708743" modified="20210626155941411" tags="category" title="VFX">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210118034708743" modified="20210706102033564" tags="category" title="VFX">
+<pre></pre>
 </div>
-<div created="20201112235833272" modified="20210626155941411" tags="category" title="Video Essay">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201112235833272" modified="20210706102036461" tags="category" title="Video Essay">
+<pre></pre>
 </div>
-<div created="20210122224041734" modified="20210626155941411" tags="category" title="Voiceless">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210122224041734" modified="20210706102039410" tags="category" title="Voiceless">
+<pre></pre>
 </div>
 <div created="20210129162700678" modified="20210303000809024" tags="channel Education Documentaries [[Popular science]] [[Thought experiment]]" title="Vsauce">
 <pre>''channel'' : https://www.youtube.com/user/Vsauce
@@ -16487,11 +16572,11 @@ Our World is Amazing.
 &lt;&lt;iframe-yt-list UU6nSFpj9HTCZ5t-N3Rm3-HA &gt;&gt;
  </pre>
 </div>
-<div created="20210205185402034" modified="20210626155941411" tags="category" title="Webserie">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210205185402034" modified="20210706102042544" tags="category" title="Webserie">
+<pre></pre>
 </div>
-<div created="20201114213023766" modified="20210626155941411" tags="category" title="Weird">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20201114213023766" modified="20210706102046105" tags="category" title="Weird">
+<pre></pre>
 </div>
 <div created="20210313134122939" modified="20210313135637076" tags="TW5" title="wikified example">
 <pre>&lt;$wikify name=&quot;wikified&quot; text='
@@ -16527,8 +16612,8 @@ Right now I am very focused on finishing the build of the Marble Machine X for t
 ;Last videos uploaded :
 &lt;&lt;iframe-yt-list UUcXhhVwCT6_WqjkEniejRJQ &gt;&gt;</pre>
 </div>
-<div created="20210201020816438" modified="20210201020828559" tags="TW5" title="wip">
-<pre>&lt;$transclude tiddler=&quot;LTg&quot;/&gt;</pre>
+<div created="20210201020816438" modified="20210706101139876" tags="TW5" title="wip">
+<pre>&lt;$transclude tiddler=&quot;(LTg)&quot;/&gt;</pre>
 </div>
 <div created="20210322144115040" modified="20210322144215484" tags="channel Cooking" title="Woo Can Cook">
 <pre>''channel'' : https://www.youtube.com/c/WooCanCook
@@ -16575,6 +16660,17 @@ Yellow Elanor is a place where those new to the world of mushrooms can learn and
 </div>
 <div created="20210222224928482" modified="20210222225141423" tags="" title="YouTube">
 <pre>https://www.youtube.com</pre>
+</div>
+<div created="20210706100400843" modified="20210706100711064" tags="channel Technology Maker Engineering Entertainment" title="Zack Freedman">
+<pre>''channel'' : https://www.youtube.com/channel/UCUW49KGPezggFi0PGyDvcvg
+
+&lt;&lt;&lt;
+Cyborg hardware hacker from the near future! I'm a freelance prototype developer when I'm not making arguably entertaining videos.
+&lt;&lt;&lt;
+
+;Last videos uploaded :
+
+&lt;&lt;iframe-yt-list UUUW49KGPezggFi0PGyDvcvg &gt;&gt;</pre>
 </div>
 
 
