@@ -145,11 +145,11 @@ Error message and password prompt
 
 <li>(LTg#)</li>
 
-<li>$:/.mr/kookma/stylesheet/tw-version</li>
-
 <li>$:/.tb/modules/startup/hide-sidebar.js</li>
 
 <li>$:/build</li>
+
+<li>$:/config/AutoSave</li>
 
 <li>$:/config/bimlas/disqus/counter-default</li>
 
@@ -237,19 +237,13 @@ Error message and password prompt
 
 <li>$:/DefaultTiddlers</li>
 
+<li>$:/edit</li>
+
+<li>$:/edit-inline</li>
+
 <li>$:/favicon.ico</li>
 
 <li>$:/favorites/favlist</li>
-
-<li>$:/GitHub/Branch</li>
-
-<li>$:/GitHub/Filename</li>
-
-<li>$:/GitHub/Path</li>
-
-<li>$:/GitHub/Repo</li>
-
-<li>$:/GitHub/Username</li>
 
 <li>$:/GoogleAnalyticsAccount</li>
 
@@ -328,6 +322,40 @@ Error message and password prompt
 <li>$:/plugins/tobibeer/random</li>
 
 <li>$:/plugins/tobibeer/setvars</li>
+
+<li>$:/SaveToGitHub</li>
+
+<li>$:/SaveToGitHub/Button</li>
+
+<li>$:/SaveToGitHub/Button/GitHubPermalink</li>
+
+<li>$:/SaveToGitHub/Button/GitHubPermaView</li>
+
+<li>$:/SaveToGitHub/Button/Private</li>
+
+<li>$:/SaveToGitHub/Caption</li>
+
+<li>$:/SaveToGitHub/CommitMessage/Modal</li>
+
+<li>$:/SaveToGitHub/GithubPageUrlFilter</li>
+
+<li>$:/SaveToGitHub/Hint</li>
+
+<li>$:/SaveToGitHub/publish</li>
+
+<li>$:/SaveToGitHub/publish/all</li>
+
+<li>$:/SaveToGitHub/publish/public</li>
+
+<li>$:/SaveToGitHub/PublishFilter</li>
+
+<li>$:/SaveToGitHub/Settings</li>
+
+<li>$:/SaveToGitHub/Settings/Style</li>
+
+<li>$:/SaveToGitHub/style/site_title</li>
+
+<li>$:/SaveToGitHub/style/title</li>
 
 <li>$:/SiteSubtitle</li>
 
@@ -443,8 +471,6 @@ Error message and password prompt
 
 <li>$:/state/consent-banner/accepted</li>
 
-<li>$:/state/folded/Vsauce</li>
-
 <li>$:/state/Link/-1545655286/search</li>
 
 <li>$:/state/plugin-info--1034462018-$:/plugins/kookma/commander</li>
@@ -537,6 +563,10 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/options/stickytitles</li>
 
+<li>$:/ThemeTweaks/style/read-only</li>
+
+<li>$:/ThemeTweaks/svg/url</li>
+
 <li>$:/view</li>
 
 <li>2D Animation</li>
@@ -556,6 +586,8 @@ Error message and password prompt
 <li>antCGi</li>
 
 <li>Anwar Jibawi</li>
+
+<li>Applied Science</li>
 
 <li>ASMR</li>
 
@@ -714,6 +746,8 @@ Error message and password prompt
 <li>InLightVFX</li>
 
 <li>Innovation</li>
+
+<li>Institute of Human Anatomy</li>
 
 <li>Isto Inc.</li>
 
@@ -929,6 +963,8 @@ Error message and password prompt
 
 <li>TroubleChute</li>
 
+<li>True Facts</li>
+
 <li>Tutorial</li>
 
 <li>TW5</li>
@@ -997,17 +1033,6 @@ Error message and password prompt
 &lt;$list filter=&quot;[all[current]tagging[]sort[title]]&quot;&gt;
 &lt;$link&gt;&lt;li&gt;&lt;span&gt;&lt;$view field=&quot;title&quot;/&gt; (&lt;$count filter=&quot;[all[current]tagging[]]&quot;/&gt;)&lt;/span&gt;&lt;/li&gt;</pre>
 </div>
-<div created="20180906042308596" creator="Mohammad" modified="20181021064233482" modifier="Mohammad" tags="kookma $:/tags/Stylesheet" title="$:/.mr/kookma/stylesheet/tw-version" type="application/x-tiddler">
-<pre>&lt;pre&gt;/* TW-version added to site title */
-.tc-site-title:before {
-  content:&quot;TW &lt;&lt;version&gt;&gt;&quot;;
-  position:absolute;
-  margin-top:-1.9em;
-  color:silver;
-  font-size:13px;
-}
-&lt;/pre&gt;</pre>
-</div>
 <div bag="default" created="20151010151732122" creator="Tobias Beer" modified="20210302223100309" module-type="startup" revision="0" tags="TW5" title="$:/.tb/modules/startup/hide-sidebar.js" type="application/javascript">
 <pre>/*\
 title: $:/.tb/modules/startup/hide-sidebar.js
@@ -1044,6 +1069,9 @@ exports.startup = function() {
 <div commit="ce8c03250cc2307fa12a992176629140c8391ab7" title="$:/build">
 <pre>Built from branch 'tiddlywiki-com' at commit ce8c03250cc2307fa12a992176629140c8391ab7 of https://github.com/Jermolene/TiddlyWiki5 at 2021-01-15 16:54:09 UTC
 </pre>
+</div>
+<div created="20211025203952913" modified="20211025205957195" title="$:/config/AutoSave">
+<pre>no</pre>
 </div>
 <div created="20210708160136130" modified="20210708160419260" tags="" title="$:/config/bimlas/disqus/counter-default" type="text/vnd.tiddlywiki">
 <pre>?</pre>
@@ -11043,26 +11071,20 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <pre>Home
 category</pre>
 </div>
+<div bag="default" created="20210612222422816" description="Adds an edit button for quickly editing transcluded content. E.g : `{{TiddlerName||$:/edit}}`" modified="20210922191013605" revision="0" tags="$:/SaveToGitHub $:/transclude/edit" title="$:/edit">
+<pre>&lt;p class=&quot;transclude-edit&quot;&gt;
+&lt;$transclude tiddler={{!!title}} mode=&quot;block&quot;/&gt;
+&lt;span class=&quot;hide-until-hover transclude-edit-button&quot;&gt; {{||$:/core/ui/Buttons/edit}}&lt;/span&gt;
+&lt;/p&gt;</pre>
+</div>
+<div bag="default" created="20210702134909188" description="Adds an edit button for quickly editing inline transcluded content. E.g : `{{TiddlerName||$:/edit-inline}}`" modified="20210922191043733" revision="0" tags="$:/SaveToGitHub $:/transclude/edit" title="$:/edit-inline">
+<pre>&lt;span class=&quot;transclude-edit&quot;&gt;&lt;$transclude tiddler={{!!title}} mode=&quot;inline&quot;/&gt;&lt;span class=&quot;hide-until-hover transclude-edit-button&quot;&gt; {{||$:/core/ui/Buttons/edit}} &lt;/span&gt;&lt;/span&gt;</pre>
+</div>
 <div created="20210211143207056" modified="20210211144244681" tags="TW5" title="$:/favicon.ico" type="image/svg+xml">
 <pre>&lt;svg height=&quot;682pt&quot; fill=&quot;#ffc953&quot; viewBox=&quot;-21 -117 682.66672 682&quot; width=&quot;682pt&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0&quot;/&gt;&lt;/svg&gt;</pre>
 </div>
 <div created="20210222232838374" list="" modified="20210223235229475" title="$:/favorites/favlist">
 <pre></pre>
-</div>
-<div created="20201112221449079" modified="20201112221450744" title="$:/GitHub/Branch">
-<pre>main</pre>
-</div>
-<div created="20201112221050982" modified="20201112221053239" title="$:/GitHub/Filename">
-<pre>index.html</pre>
-</div>
-<div created="20201112221048855" modified="20201112221048855" title="$:/GitHub/Path">
-<pre>/</pre>
-</div>
-<div created="20201112221014456" modified="20201112221022215" title="$:/GitHub/Repo">
-<pre>CuratedVideos/curatedvideos.github.io</pre>
-</div>
-<div created="20201112220827768" modified="20210714023813355" title="$:/GitHub/Username">
-<pre>CuratedVideos</pre>
 </div>
 <div created="20210224003508949" modified="20210224003508949" title="$:/GoogleAnalyticsAccount">
 <pre>G-QTC5DX05MP</pre>
@@ -11073,7 +11095,7 @@ category</pre>
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/bimlas/disqus]]</pre>
+# [[$:/ThemeTweaks/style/read-only]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -14383,6 +14405,337 @@ $text$
     }
 }</pre>
 </div>
+<div bag="default" created="20210907001445052" description="Utilities to help using ~GitHub Page." modified="20210922191142215" revision="0" tagging="after" tags="$:/SaveToGitHub $:/TiddlyTweaks" title="$:/SaveToGitHub">
+<pre></pre>
+</div>
+<div bag="default" caption="{{$:/core/images/github}} {{$:/SaveToGitHub/Caption}}" created="20210813013650836" description="Save to ~GitHub" modified="20210922201329321" revision="0" tags="$:/tags/PageControls $:/SaveToGitHub" title="$:/SaveToGitHub/Button">
+<pre>&lt;!-- &gt;&gt;Warning&lt;&lt;
+The syncer module uses the saver with the highest priority capable of the requested method to save the file.
+If another saver has a higher priority than the GitHub Saver, this will not work !
+A better way to do this would be to manually trigger the GitHub saver, but it is not possible at the moment without custom JavaScript code.
+
+See: 
+* https://tiddlywiki.com/dev/static/Extended%2520Persistence.html
+* https://bimlas.gitlab.io/demo/tw5/preferred-saver.html
+--&gt;
+&lt;$button tooltip={{$:/SaveToGitHub/Hint}} aria-label={{$:/SaveToGitHub/Caption}}  class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;!--
+1. Disable AutoSave to prevent accidental tiddler deletion 
+--&gt;
+&lt;$action-setfield $tiddler=&quot;$:/config/AutoSave&quot; text=&quot;no&quot;/&gt;
+&lt;!--
+2. Create the tiddlers containing the settings for the save exist if they dont exist
+--&gt;
+&lt;$action-listops $tiddler=&quot;$:/SaveToGitHub/private/username&quot; $tags=&quot;[[$:/SaveToGitHub]]&quot;/&gt;
+&lt;$action-listops $tiddler=&quot;$:/SaveToGitHub/private/state&quot; $tags=&quot;[[$:/SaveToGitHub]]&quot;/&gt;
+&lt;!--
+3. Set the GitHub username to enable the GitHub Saver. 
+--&gt;
+&lt;$action-setfield $tiddler=&quot;$:/GitHub/Username&quot; text={{$:/SaveToGitHub/private/username}}/&gt;
+&lt;!--
+4. Ask for a commit if the checkbox is checked. See [[$:/SaveToGitHub/CommitMessage/Modal]]
+--&gt;
+&lt;$list filter=&quot;[{$:/SaveToGitHub/Settings!!ask-commit}match[true]]&quot;&gt;
+&lt;$action-sendmessage $message=&quot;tm-modal&quot; $param=&quot;$:/SaveToGitHub/CommitMessage/Modal&quot;/&gt;
+&lt;/$list&gt;
+&lt;!-- 
+5. Else, save to GitHub without modifying the commit message and finally re-enable the AutoSave.
+--&gt;
+&lt;$list filter=&quot;[{$:/SaveToGitHub/Settings!!ask-commit}match[false]]&quot;&gt;
+&lt;$action-sendmessage $message=&quot;tm-save-wiki&quot; $param=&quot;$:/core/save/all&quot; publishFilter={{$:/SaveToGitHub/PublishFilter}} /&gt;
+&lt;!-- 
+   $:/GitHub/Username is deleted to disable the GitHub Saver.
+--&gt;
+&lt;$action-setfield $tiddler=&quot;$:/GitHub/Username&quot; text=&quot;&quot;/&gt;
+&lt;$action-setfield $tiddler=&quot;$:/config/AutoSave&quot; text=&quot;yes&quot;/&gt;
+&lt;/$list&gt;
+&lt;span class=&quot;tc-dirty-indicator&quot;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;
+{{$:/core/images/github}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;save to github&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/span&gt;
+&lt;/$button&gt;</pre>
+</div>
+<div bag="default" caption="GitHub permalink" created="20210921232322676" description="Button to get the GitHub Page url of a tiddler. " hint="Click to copy the GitHub Page url of this tiddler to the clipboard" modified="20211021220512447" revision="0" tags="$:/SaveToGitHub $:/tags/ViewToolbar" title="$:/SaveToGitHub/Button/GitHubPermalink">
+<pre>\whitespace trim
+&lt;$vars separator-start=&quot;:[[&quot; separator-end=&quot;]]&quot;&gt;
+&lt;$set name=GithubPageTiddlerUrl filter=&quot;
+[[https://]][{$:/SaveToGitHub/private/username}][[.github.io/]]
+[{$:/GitHub/Repo}removeprefix{$:/SaveToGitHub/private/username}removeprefix[/]]
+[{$:/GitHub/Path}addsuffix{$:/GitHub/Filename}]
+#
+[&lt;separator-start&gt;]
+[all[current]]
+[&lt;separator-end&gt;]
++[join[]encodeuri[]]
+&quot;&gt;
+&lt;$button class=tc-btn-invisible message=&quot;tm-copy-to-clipboard&quot; 
+param=&lt;&lt;GithubPageTiddlerUrl&gt;&gt; tooltip={{!!hint}} aria-label=&quot;GitHub permalink&quot;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;
+{{$:/core/images/file}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;
+&lt;$text text=&quot; &quot;/&gt;
+&lt;$text text={{$:/SaveToGitHub/Button/GitHubPermalink!!caption}}/&gt;
+&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+&lt;/$set&gt;
+&lt;/$vars&gt;</pre>
+</div>
+<div bag="default" caption="GitHub permaview" created="20210922001530951" description="Button to get the ~GitHub Page url of this story. TODO : add a proper icon" hint="Click to copy the ~GitHub Page url of this story to the clipboard" modified="20211021220503245" revision="0" tags="$:/SaveToGitHub $:/tags/ViewToolbar" task="todo" title="$:/SaveToGitHub/Button/GitHubPermaView">
+<pre>\whitespace trim
+&lt;$vars separator=&quot;]][[&quot; separator-start=&quot;:[[&quot; separator-end=&quot;]]&quot;&gt;
+&lt;$set name=GithubPageTiddlerUrl filter=&quot;
+[[https://]][{$:/SaveToGitHub/private/username}][[.github.io/]]
+[{$:/GitHub/Repo}removeprefix{$:/SaveToGitHub/private/username}removeprefix[/]]
+[{$:/GitHub/Path}addsuffix{$:/GitHub/Filename}]
+#
+[&lt;separator-start&gt;] [list[$:/StoryList]join&lt;separator&gt;] [&lt;separator-end&gt;]
++[join[]encodeuri[]]
+&quot;&gt;
+&lt;$button class=tc-btn-invisible message=&quot;tm-copy-to-clipboard&quot; 
+param=&lt;&lt;GithubPageTiddlerUrl&gt;&gt; tooltip={{!!hint}} aria-label=&quot;GitHub permaview&quot;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;
+{{$:/core/images/folder}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;
+&lt;$text text=&quot; &quot;/&gt;
+&lt;$text text={{$:/SaveToGitHub/Button/GitHubPermaView!!caption}}/&gt;
+&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+&lt;/$set&gt;
+&lt;/$vars&gt;</pre>
+</div>
+<div bag="default" caption="Private" created="20210922022754002" description="Mark the tiddler as private." hint="Click to set the tiddler to private" modified="20211021215729064" revision="0" tags="$:/SaveToGitHub $:/tags/EditToolbar $:/tags/ViewToolbar" title="$:/SaveToGitHub/Button/Private">
+<pre>\whitespace trim
+&lt;$button class=tc-btn-invisible tooltip={{$:/SaveToGitHub/Button/Private!!hint}} aria-label=&quot;set password&quot;&gt;
+&lt;$action-listops  $tiddler=&lt;&lt;currentTiddler&gt;&gt; $tags=&quot;+[toggle[private]]&quot; /&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot; variable=_&gt;
+&lt;$list filter=&quot;[all[current]tag[private]]&quot;&gt;
+{{$:/core/images/locked-padlock}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[all[current]!tag[private]]&quot;&gt;
+{{$:/core/images/unlocked-padlock}}
+&lt;/$list&gt;
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;
+&lt;$text text=&quot; &quot;/&gt;
+&lt;$text text={{$:/SaveToGitHub/Button/Private!!caption}}/&gt;
+&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;</pre>
+</div>
+<div bag="default" created="20210806021049086" modified="20210813030810346" revision="0" tags="$:/SaveToGitHub" title="$:/SaveToGitHub/Caption">
+<pre>save to github</pre>
+</div>
+<div bag="default" created="20210813010927077" footer="&lt;$button message=&quot;tm-close-tiddler&quot;&gt;Commit&lt;$action-sendmessage $message=&quot;tm-save-wiki&quot; $param=&quot;$:/core/save/all&quot; publishFilter={{$:/SaveToGitHub/PublishFilter}} /&gt; &lt;$action-setfield $tiddler=&quot;$:/GitHub/Username&quot; text=&quot;&quot;/&gt; &lt;$action-setfield $tiddler=&quot;$:/config/AutoSave&quot; text=&quot;yes&quot;/&gt;&lt;/$button&gt;" modified="20210813014424463" revision="0" subtitle="Commit message" tags="$:/SaveToGitHub" title="$:/SaveToGitHub/CommitMessage/Modal">
+<pre>&lt;style&gt;
+.tc-edit-texteditor{
+width:100%;
+}
+
+&lt;/style&gt;
+
+&lt;$edit-text class=&quot;commit-message&quot; tiddler=&quot;$:/language/ControlPanel/Saving/GitService/CommitMessage&quot; default=&quot;Saved by TiddlyWiki&quot; tag=&quot;textarea&quot; class=&quot;tc-edit-texteditor&quot;/&gt;</pre>
+</div>
+<div bag="default" created="20210922004120766" modified="20211003164332449" revision="0" tags="$:/SaveToGitHub/Settings $:/SaveToGitHub" title="$:/SaveToGitHub/GithubPageUrlFilter">
+<pre>[[https://]]
+[{$:/SaveToGitHub/private/username}]
+[[.github.io]]
+[{$:/GitHub/Repo}removeprefix{$:/SaveToGitHub/private/username}]
+[{$:/GitHub/Path}]
++[join[]]</pre>
+</div>
+<div bag="default" created="20210806021302793" modified="20210813030810346" revision="0" tags="$:/SaveToGitHub" title="$:/SaveToGitHub/Hint" type="text/plain">
+<pre>save to GitHub</pre>
+</div>
+<div bag="default" created="20210727234120954" modified="20210922022516150" revision="0" tags="$:/SaveToGitHub $:/About" title="$:/SaveToGitHub/publish">
+<pre>&lt;style&gt;
+.sidebar-link .tc-btn-invisible.tc-tiddlylink{
+color:&lt;&lt;colour tiddler-link-foreground&gt;&gt;;
+}
+&lt;/style&gt;
+
+!![[Download|$:/SaveToGitHub/publish]]
+
+&lt;span class=&quot;sidebar-link&quot;&gt;
+
+* {{$:/SaveToGitHub/publish/public||$:/edit-inline}}
+* {{$:/SaveToGitHub/publish/all||$:/edit-inline}}
+
+&lt;/span&gt;</pre>
+</div>
+<div bag="default" created="20210728012614920" description="Download the entire wiki" modified="20210922211149160" revision="0" tags="$:/SaveToGitHub" title="$:/SaveToGitHub/publish/all">
+<pre>&lt;$button class=&quot;tc-btn-invisible tc-tiddlylink&quot;&gt;
+&lt;$action-sendmessage $message=&quot;tm-download-file&quot; $param=&quot;$:/core/save/all&quot; filename=&quot;complete.html&quot;/&gt;
+all
+&lt;/$button&gt;</pre>
+</div>
+<div bag="default" created="20210728012459049" description="Download the filtered wiki" modified="20210907180810917" revision="0" tags="$:/SaveToGitHub" title="$:/SaveToGitHub/publish/public">
+<pre>&lt;$button class=&quot;tc-btn-invisible tc-tiddlylink&quot;&gt;
+&lt;$action-sendmessage $message=&quot;tm-download-file&quot; $param=&quot;$:/core/save/all&quot; filename=&quot;public.html&quot; publishFilter={{$:/SaveToGitHub/PublishFilter}} /&gt;
+public
+&lt;/$button&gt;</pre>
+</div>
+<div bag="default" created="20210806130312321" description="If no filter is specified, ALL tiddlers will be uploaded when saving to github." modified="20211003163633403" revision="0" tags="$:/SaveToGitHub" title="$:/SaveToGitHub/PublishFilter">
+<pre>-[tag[private]] 
+-$:/HistoryList 
+-[search:title[$:/state/folded]] -[has[draft.of]] -[search:title[$:/GitHub]] -[search:title[$:/SaveToGitHub/private]]</pre>
+</div>
+<div ask-commit="false" bag="default" caption="Github" created="20210805131146320" modified="20211025205203373" revision="0" tags="$:/SaveToGitHub $:/tags/SideBar" title="$:/SaveToGitHub/Settings">
+<pre>\define lingo-base() $:/language/ControlPanel/Saving/GitService/
+\define service-name() ~GitHub
+
+!!![[Commit Message|$:/language/ControlPanel/Saving/GitService/CommitMessage]]
+&lt;$edit-text tiddler=&quot;$:/language/ControlPanel/Saving/GitService/CommitMessage&quot; default=&quot;Saved by TiddlyWiki&quot; tag=&quot;textarea&quot; class=&quot;tc-edit-texteditor&quot;/&gt;
+&lt;$checkbox tiddler=&quot;$:/SaveToGitHub/Settings&quot; field=&quot;ask-commit&quot; checked=&quot;true&quot; unchecked=&quot;false&quot; default=&quot;false&quot;&gt; Ask for a commit message&lt;/$checkbox&gt;
+
+
+!!![[Filter|$:/SaveToGitHub/PublishFilter]]
+
+&lt;$edit-text tiddler=&quot;$:/SaveToGitHub/PublishFilter&quot; default=&quot;&quot; tag=&quot;textarea&quot; class=&quot;tc-edit-texteditor&quot;/&gt;
+
+|GitHub-Table-Settings|k
+|[[GitHub settings|$:/SaveToGitHub/Settings]]|c
+|&lt;&lt;lingo UserName&gt;&gt;|&lt;$edit-text tiddler=&quot;$:/SaveToGitHub/private/username&quot; autocomplete=&quot;username&quot;  placeholder=&quot;github username&quot; default={{$:/GitHub/Username}} tag=&quot;input&quot;/&gt;|
+|&lt;&lt;lingo GitHub/Password&gt;&gt; |&lt;$password name=&quot;github&quot;/&gt; |
+|&lt;&lt;lingo Repo&gt;&gt; |&lt;$edit-text tiddler=&quot;$:/GitHub/Repo&quot; default=&quot;&quot; tag=&quot;input&quot;/&gt; |
+|&lt;&lt;lingo Branch&gt;&gt; |&lt;$edit-text tiddler=&quot;$:/GitHub/Branch&quot; default=&quot;master&quot; tag=&quot;input&quot;/&gt; |
+|&lt;&lt;lingo Path&gt;&gt; |&lt;$edit-text tiddler=&quot;$:/GitHub/Path&quot; default=&quot;&quot; tag=&quot;input&quot;/&gt; |
+|&lt;&lt;lingo Filename&gt;&gt; |&lt;$edit-text tiddler=&quot;$:/GitHub/Filename&quot; default=&quot;&quot; tag=&quot;input&quot;/&gt; |
+|&lt;&lt;lingo ServerURL&gt;&gt; |&lt;$edit-text tiddler=&quot;$:/GitHub/ServerURL&quot; default=&quot;https://api.github.com&quot; tag=&quot;input&quot;/&gt; |
+
+
+!!! ~GitHub Pages url
+
+&lt;$vars link={{{[subfilter{$:/SaveToGitHub/GithubPageUrlFilter}]}}}&gt;
+&lt;&lt;link&gt;&gt;
+&lt;/$vars&gt;</pre>
+</div>
+<div bag="default" created="20210810223410206" modified="20210813030810346" revision="0" tags="$:/tags/Stylesheet $:/SaveToGitHub" title="$:/SaveToGitHub/Settings/Style">
+<pre>&lt;pre&gt;
+.tc-story-river table.GitHub-Table-Settings{
+	padding-top: 0px;
+}
+
+.tc-story-river table.GitHub-Table-Settings caption {
+	caption-side: top;
+	text-align: left;
+	font-size: 22.5px;
+	line-height: 27px;
+	font-weight: 500;
+	margin-top: 18.675px;
+	margin-bottom: 18.675px;
+}
+
+.tc-tab-content.tc-sidebar-tabs-main table.GitHub-Table-Settings{
+display:flex;
+flex-direction:column;
+padding:1em;
+}
+
+.tc-tab-content.tc-sidebar-tabs-main table.GitHub-Table-Settings td{
+border:0;
+display:flex;
+flex-wrap: wrap;
+flex: 1;
+}
+
+.tc-tab-content.tc-sidebar-tabs-main table.GitHub-Table-Settings td a{
+    padding-left: .5ch;
+    padding-right: .5ch;
+}
+
+.tc-tab-content.tc-sidebar-tabs-main table.GitHub-Table-Settings td input{
+display:flex;
+flex: 1;
+}
+
+.tc-tab-content.tc-sidebar-tabs-main table.GitHub-Table-Settings td:first-child {
+margin-top:1em;
+}
+
+.tc-tab-content.tc-sidebar-tabs-main :is(table.GitHub-Table-Settings tbody, table.GitHub-Table-Settings tr){
+display:contents;
+}
+
+.tc-tab-content.tc-sidebar-tabs-main table.GitHub-Table-Settings caption{
+margin-top:-1.8em;
+padding-left:.5em;
+padding-right:.5em;
+background:&lt;&lt;color sidebar-tab-background-selected&gt;&gt;;
+align-self: center;
+}
+
+.tc-tab-content.tc-sidebar-tabs-main textarea.tc-edit-texteditor{
+width:100%;
+}
+
+&lt;/pre&gt;</pre>
+</div>
+<div bag="default" created="20210907134312150" modified="20210922145348751" revision="0" tags="$:/tags/Stylesheet $:/SaveToGitHub" title="$:/SaveToGitHub/style/site_title">
+<pre>&lt;$reveal default={{{[{$:/SaveToGitHub/private/state}match[yes]]}}} type=&quot;match&quot; text=&quot;yes&quot;&gt;
+
+&lt;pre&gt;
+
+/*Display the lock icon on the site title if $:/SaveToGitHub/private/state is set to private*/
+
+.tc-site-title:before{
+content:&quot; &quot;;
+height:  0.72em;width: 0.72em;
+display:inline-flex;
+margin-right: .2ch;
+&lt;$vars svg={{$:/core/images/locked-padlock}} fill=&quot;primary&quot;&gt; {{||$:/ThemeTweaks/svg/url}} &lt;/$vars&gt;
+background: center / contain no-repeat var(`--`url);
+}
+
+&lt;/pre&gt;
+&lt;/$reveal&gt;
+
+&lt;$reveal default={{{[{$:/SaveToGitHub/private/state}match[yes]]}}} type=&quot;nomatch&quot; text=&quot;yes&quot;&gt;
+
+&lt;pre&gt;
+
+/*Display the tool icon on the site title if $:/SaveToGitHub/private/state is not set to private*/
+
+.tc-site-title:before{
+content:&quot; &quot;;
+height:  0.72em;width: 0.72em;
+display:inline-flex;
+margin-right: .2ch;
+&lt;$vars svg={{$:/core/images/theme-button}} fill=&quot;primary&quot;&gt; {{||$:/ThemeTweaks/svg/url}} &lt;/$vars&gt;
+background: center / contain no-repeat var(`--`url);
+}
+
+&lt;/pre&gt;
+&lt;/$reveal&gt;</pre>
+</div>
+<div created="20210930142431580" modified="20210930142513908" tags="$:/SaveToGitHub $:/tags/Stylesheet" title="$:/SaveToGitHub/style/title">
+<pre>&lt;$reveal default={{{[{$:/SaveToGitHub/private/state}match[yes]]}}} type=&quot;match&quot; text=&quot;yes&quot;&gt;
+
+&lt;pre&gt;
+
+/*Display the lock icon on the private tiddler title if $:/SaveToGitHub/private/state is set to private*/
+[data-tags*=&quot;private&quot;] .tc-title:before{
+content:&quot; &quot;;
+height:  0.72em;width: 0.72em;
+display:inline-flex;
+margin-right: .2ch;
+background: center / contain no-repeat var(`--`url);
+&lt;$vars svg={{$:/core/images/locked-padlock}} fill=&quot;primary&quot;&gt; {{||$:/ThemeTweaks/svg/url}} &lt;/$vars&gt;
+}
+&lt;/pre&gt;
+
+&lt;/$reveal&gt;</pre>
+</div>
 <div created="20201112214725096" modified="20201112214849606" title="$:/SiteSubtitle">
 <pre>Interesting, hand-picked video programs to explore beyond the algorithm</pre>
 </div>
@@ -14545,17 +14898,14 @@ $text$
 <div created="20210222232608735" modified="20210708155051769" title="$:/state/addplugins/tab-1342078386">
 <pre>$:/config/OfficialPluginLibrary</pre>
 </div>
-<div created="20210201015607790" modified="20210708160724240" title="$:/state/advancedsearch/currentTab">
-<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+<div created="20210201015607790" modified="20211025203846327" title="$:/state/advancedsearch/currentTab">
+<pre>$:/core/ui/AdvancedSearch/System</pre>
 </div>
 <div created="20210708155543353" modified="20210714023521516" title="$:/state/bimlas/disqus">
 <pre></pre>
 </div>
 <div title="$:/state/consent-banner/accepted">
 <pre>yes</pre>
-</div>
-<div created="20210710151331804" modified="20210710151337406" title="$:/state/folded/Vsauce">
-<pre>show</pre>
 </div>
 <div created="20210223235153657" modified="20210223235153657" title="$:/state/Link/-1545655286/search">
 <pre>&lt;a href=&quot;./index.html#:[tag[channel]random[]]&quot; style=&quot;text-decoration:none;&quot;&gt;🎲&lt;/a&gt;</pre>
@@ -14614,11 +14964,11 @@ $text$
 <div created="20210126154220717" modified="20210126154220717" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20210205170603975" modified="20210714023534296" title="$:/state/sidebar">
+<div created="20210205170603975" modified="20211025204254471" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20210201015607791" modified="20210708160724240" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+<div created="20210201015607791" modified="20211025203846327" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/System</pre>
 </div>
 <div created="20210126154209893" modified="20210626160114771" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
@@ -14632,8 +14982,8 @@ $text$
 <div created="20210302233222510" modified="20210302233222510" title="$:/state/tab--757196817">
 <pre>$:/plugins/kookma/commander/help/uicomp/snr</pre>
 </div>
-<div created="20210115194926272" modified="20210708160819546" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Saving</pre>
+<div created="20210115194926272" modified="20211025204300832" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20210223225010417" modified="20210223225012960" title="$:/state/tab-1846149089">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Updates</pre>
@@ -14650,7 +15000,7 @@ $text$
 <div created="20210222230414004" modified="20210223230643556" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20210115195813582" modified="20210710150759215" title="$:/state/tab/sidebar--595412856">
+<div created="20210115195813582" modified="20211025205934155" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20210127000723467" modified="20210626160120644" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -14665,7 +15015,7 @@ $text$
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210714023803935" list="$:/ControlPanel Home category" modified="20210714023803935" title="$:/StoryList">
+<div list="Home category" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210223140033254" modified="20210706101139872" tags="TW5" title="$:/tags/Macro">
@@ -14798,6 +15148,31 @@ $text$
 <div created="20201129043812757" modified="20201129043816268" title="$:/themes/tiddlywiki/vanilla/options/stickytitles">
 <pre>no</pre>
 </div>
+<div created="20211021165013254" modified="20211021220537520" tags="$:/ThemeTweaks $:/tags/Stylesheet" title="$:/ThemeTweaks/style/read-only" type="text/vnd.tiddlywiki">
+<pre>&lt;$reveal type=&quot;match&quot; default={{{[[TiddlyWiki Safe Mode]is[tiddler]][{$:/info/url/protocol}match[file:]]}}} text=&quot;&quot;&gt;
+button:is( 
+[aria-label*=&quot;edit&quot;],
+[aria-label*=&quot;delete&quot;],
+[aria-label*=&quot;new&quot;],
+[aria-label*=&quot;clone&quot;],
+[aria-label*=&quot;save&quot;],
+[aria-label*=&quot;set&quot;],
+[aria-label*=&quot;GitHub perma&quot;],
+[aria-label*=&quot;Toggle&quot;]
+){
+display:none;
+}
+&lt;/$reveal&gt;</pre>
+</div>
+<div bag="default" created="20210922004830897" description="Transclude this to generate an URL SVG" modified="20211001144625035" revision="0" tags="$:/tags/Stylesheet $:/ThemeTweaks $:/ThemeTweaks/svg $:/SaveToGitHub" title="$:/ThemeTweaks/svg/url" type="">
+<pre>&lt;$vars 
+svg={{{ [&lt;svg&gt;get[text]else&lt;svg&gt;] }}}
+fill={{{[&lt;fill&gt;]:reduce[{$:/palette}getindex&lt;currentTiddler&gt;match[inherit]then[foreground]else&lt;currentTiddler&gt;]:reduce[{$:/palette}getindex&lt;currentTiddler&gt;else&lt;currentTiddler&gt;]:reduce[&lt;currentTiddler&gt;is[blank]then[$:/palettes/Vanilla]getindex[foreground]else&lt;currentTiddler&gt;]+[search-replace[#],[%23]]}}}&gt;  
+
+`--`url:url(&lt;$text text={{{[['data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;]][&lt;fill&gt;][[&quot; width=&quot;22pt&quot; height=&quot;22pt&quot;&gt;]][&lt;svg&gt;][[&lt;/svg&gt;']]+[join[]]}}} /&gt;);
+
+&lt;/$vars&gt;</pre>
+</div>
 <div created="20201129043801427" modified="20201129043801427" title="$:/view">
 <pre>classic</pre>
 </div>
@@ -14864,6 +15239,17 @@ Founded in 2014 by industry veteran Antony Ward, author of Game Character Develo
 
 &lt;&lt;iframe-yt-list UUEr55381WIqO1w_IzgcI5DQ &gt;&gt;
 </pre>
+</div>
+<div created="20211017014156666" modified="20211017014255331" tags="[[Popular science]] Physics" title="Applied Science">
+<pre>''channel'' : https://www.youtube.com/channel/UCivA7_KLKWo43tFcCkFvydw
+
+&lt;&lt;&lt;
+Subscribe to see interesting applications of science and technology. You'll see how an electron microscope was built in a home shop, how an X-ray backscatter system works, how to make aerogel, and many other hi-tech projects.  Topics usually include electromechanical systems, chemistry, and electronics. Hosted by Ben Krasnow.
+&lt;&lt;&lt;
+
+;Last videos uploaded :
+
+&lt;&lt;iframe-yt-list UUivA7_KLKWo43tFcCkFvydw &gt;&gt;</pre>
 </div>
 <div created="20210211004226043" modified="20210706101820760" tags="category" title="ASMR">
 <pre></pre>
@@ -15576,6 +15962,19 @@ I'm a commercial director using Blender 3D to add CGI to the real world! I post 
 </div>
 <div created="20210116210201451" modified="20210706101926648" tags="category" title="Innovation">
 <pre></pre>
+</div>
+<div created="20211025203403732" modified="20211025203544748" tags="channel Anatomy [[Popular science]] Health LifeStyle" title="Institute of Human Anatomy">
+<pre>''channel'' : https://www.youtube.com/c/InstituteofHumanAnatomy
+
+&lt;&lt;&lt;
+The Institute of Human Anatomy is a private human cadaver lab that teaches various healthcare professionals with the use of real human cadavers.
+
+Our goal is simple -- teach as many people as possible about the one thing they carry with themselves 24/7, for the entirety of their lives -- their body.
+&lt;&lt;&lt;
+
+;Last videos uploaded :
+
+&lt;&lt;iframe-yt-list UUgBg0aacyJnw4qUnb1FlfEQ &gt;&gt;</pre>
 </div>
 <div created="20210303010103837" modified="20210303010321979" tags="channel [[Dev logs]]" title="Isto Inc.">
 <pre>''channel'' : https://www.youtube.com/c/IstoInc
@@ -16850,6 +17249,17 @@ I put useful tutorials, how-to guides and other things here. This channel is mor
 ;Last videos uploaded :
 
 &lt;&lt;iframe-yt-list UUkih2oVTbXPEpVwE-U7kmHw &gt;&gt;</pre>
+</div>
+<div created="20211011124626232" modified="20211011124828438" tags="Webserie [[Popular science]] Biology Documentaries" title="True Facts">
+<pre>''channel'' : https://www.youtube.com/c/zefrank
+
+&lt;&lt;&lt;
+True Facts About Everything. Science. And Science.
+&lt;&lt;&lt;
+
+;Last videos uploaded :
+
+&lt;&lt;iframe-yt-list PLOHbM4GGWADc5bZgvbivvttAuWGow6h05 &gt;&gt;</pre>
 </div>
 <div created="20201112233147298" modified="20210706102025081" tags="category" title="Tutorial">
 <pre></pre>
